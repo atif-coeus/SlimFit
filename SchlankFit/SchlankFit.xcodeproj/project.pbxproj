@@ -38,6 +38,18 @@
 		EAC2956E1828F44F003D1CCE /* CustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2956B1828F44F003D1CCE /* CustomAdView.m */; };
 		EAC2956F1828F44F003D1CCE /* CustomAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC2956C1828F44F003D1CCE /* CustomAdView.xib */; };
 		EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */; };
+		F85A200F182B71BC001AB9A6 /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A200D182B71BC001AB9A6 /* libSmartAdServer.a */; };
+		F85A2010182B71BC001AB9A6 /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F85A200E182B71BC001AB9A6 /* sas.bundle */; };
+		F85A2012182B72E1001AB9A6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2011182B72E1001AB9A6 /* CoreMotion.framework */; };
+		F85A2014182B72FE001AB9A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */; };
+		F85A2016182B7307001AB9A6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2015182B7307001AB9A6 /* AdSupport.framework */; };
+		F85A2018182B730F001AB9A6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2017182B730F001AB9A6 /* MediaPlayer.framework */; };
+		F85A201A182B7363001AB9A6 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2019182B7363001AB9A6 /* EventKit.framework */; };
+		F85A201C182B736A001AB9A6 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A201B182B736A001AB9A6 /* EventKitUI.framework */; };
+		F85A2025182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A201F182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib */; };
+		F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */; };
+		F85A2027182B7AA6001AB9A6 /* DietPlannerSimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */; };
+		F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +108,27 @@
 		EAC2956B1828F44F003D1CCE /* CustomAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAdView.m; sourceTree = "<group>"; };
 		EAC2956C1828F44F003D1CCE /* CustomAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAdView.xib; sourceTree = "<group>"; };
 		EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateDietNotifierView.xib; sourceTree = "<group>"; };
+		F85A2006182B71BC001AB9A6 /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
+		F85A2007182B71BC001AB9A6 /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
+		F85A2008182B71BC001AB9A6 /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
+		F85A2009182B71BC001AB9A6 /* SASInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASInterstitialView.h; sourceTree = "<group>"; };
+		F85A200A182B71BC001AB9A6 /* SmartAdServerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerAd.h; sourceTree = "<group>"; };
+		F85A200B182B71BC001AB9A6 /* SmartAdServerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerView.h; sourceTree = "<group>"; };
+		F85A200C182B71BC001AB9A6 /* SmartAdServerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerViewDelegate.h; sourceTree = "<group>"; };
+		F85A200D182B71BC001AB9A6 /* libSmartAdServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartAdServer.a; sourceTree = "<group>"; };
+		F85A200E182B71BC001AB9A6 /* sas.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sas.bundle; sourceTree = "<group>"; };
+		F85A2011182B72E1001AB9A6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F85A2015182B7307001AB9A6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F85A2017182B730F001AB9A6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F85A2019182B7363001AB9A6 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		F85A201B182B736A001AB9A6 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		F85A201F182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSpecialCell.xib; sourceTree = "<group>"; };
+		F85A2020182B7AA6001AB9A6 /* DietPlannerSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSpecialCell.h; sourceTree = "<group>"; };
+		F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSpecialCell.m; sourceTree = "<group>"; };
+		F85A2022182B7AA6001AB9A6 /* DietPlannerSimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSimpleCell.h; sourceTree = "<group>"; };
+		F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSimpleCell.m; sourceTree = "<group>"; };
+		F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSimpleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +136,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC2955F1828C6F9003D1CCE /* QuartzCore.framework in Frameworks */,
-				EA9ACA5118212E82003C9D12 /* CoreGraphics.framework in Frameworks */,
 				EA9ACA5318212E82003C9D12 /* UIKit.framework in Frameworks */,
+				F85A201C182B736A001AB9A6 /* EventKitUI.framework in Frameworks */,
+				F85A201A182B7363001AB9A6 /* EventKit.framework in Frameworks */,
+				EA9ACA5118212E82003C9D12 /* CoreGraphics.framework in Frameworks */,
+				F85A2018182B730F001AB9A6 /* MediaPlayer.framework in Frameworks */,
+				F85A2016182B7307001AB9A6 /* AdSupport.framework in Frameworks */,
+				F85A2014182B72FE001AB9A6 /* SystemConfiguration.framework in Frameworks */,
+				F85A2012182B72E1001AB9A6 /* CoreMotion.framework in Frameworks */,
+				EAC2955F1828C6F9003D1CCE /* QuartzCore.framework in Frameworks */,
+				F85A200F182B71BC001AB9A6 /* libSmartAdServer.a in Frameworks */,
 				EA9ACA4F18212E82003C9D12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +186,12 @@
 		EA9ACA4D18212E82003C9D12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F85A201B182B736A001AB9A6 /* EventKitUI.framework */,
+				F85A2019182B7363001AB9A6 /* EventKit.framework */,
+				F85A2017182B730F001AB9A6 /* MediaPlayer.framework */,
+				F85A2015182B7307001AB9A6 /* AdSupport.framework */,
+				F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */,
+				F85A2011182B72E1001AB9A6 /* CoreMotion.framework */,
 				EAC2955E1828C6F9003D1CCE /* QuartzCore.framework */,
 				EA9ACA4E18212E82003C9D12 /* Foundation.framework */,
 				EA9ACA5018212E82003C9D12 /* CoreGraphics.framework */,
@@ -158,6 +204,7 @@
 		EA9ACA5418212E82003C9D12 /* SchlankFit */ = {
 			isa = PBXGroup;
 			children = (
+				F85A201E182B7A67001AB9A6 /* CustomCells */,
 				EAC295641828F44F003D1CCE /* CustomViews */,
 				EA9ACA8318212EB9003C9D12 /* ViewControllers */,
 				EA9ACA5D18212E82003C9D12 /* AppDelegate.h */,
@@ -232,6 +279,7 @@
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				F85A2004182B71BC001AB9A6 /* SmartAd */,
 				EAC295401828B801003D1CCE /* MNMRemoteImageView */,
 				EAC295431828B801003D1CCE /* NIDropDown */,
 				EAC295461828B801003D1CCE /* PopUp */,
@@ -320,6 +368,52 @@
 			path = CustomAdView;
 			sourceTree = "<group>";
 		};
+		F85A2004182B71BC001AB9A6 /* SmartAd */ = {
+			isa = PBXGroup;
+			children = (
+				F85A2005182B71BC001AB9A6 /* headers */,
+				F85A200D182B71BC001AB9A6 /* libSmartAdServer.a */,
+				F85A200E182B71BC001AB9A6 /* sas.bundle */,
+			);
+			path = SmartAd;
+			sourceTree = "<group>";
+		};
+		F85A2005182B71BC001AB9A6 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				F85A2006182B71BC001AB9A6 /* SASAdView.h */,
+				F85A2007182B71BC001AB9A6 /* SASAdViewDelegate.h */,
+				F85A2008182B71BC001AB9A6 /* SASBannerView.h */,
+				F85A2009182B71BC001AB9A6 /* SASInterstitialView.h */,
+				F85A200A182B71BC001AB9A6 /* SmartAdServerAd.h */,
+				F85A200B182B71BC001AB9A6 /* SmartAdServerView.h */,
+				F85A200C182B71BC001AB9A6 /* SmartAdServerViewDelegate.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		F85A201D182B7A31001AB9A6 /* DietPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				F85A201F182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib */,
+				F85A2020182B7AA6001AB9A6 /* DietPlannerSpecialCell.h */,
+				F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */,
+				F85A2022182B7AA6001AB9A6 /* DietPlannerSimpleCell.h */,
+				F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */,
+				F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */,
+			);
+			name = DietPlanner;
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F85A201E182B7A67001AB9A6 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				F85A201D182B7A31001AB9A6 /* DietPlanner */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,10 +491,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC2955D1828C626003D1CCE /* apple2.png in Resources */,
+				F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */,
 				EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */,
+				F85A2010182B71BC001AB9A6 /* sas.bundle in Resources */,
 				EA9ACA6718212E82003C9D12 /* Images.xcassets in Resources */,
 				EAC295541828B801003D1CCE /* popupBg.png in Resources */,
 				EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */,
+				F85A2025182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib in Resources */,
 				EAC295531828B801003D1CCE /* DownloadingAlert.xib in Resources */,
 				EAC2956F1828F44F003D1CCE /* CustomAdView.xib in Resources */,
 				EA9ACA5918212E82003C9D12 /* InfoPlist.strings in Resources */,
@@ -426,6 +523,7 @@
 			files = (
 				EA9ACA6518212E82003C9D12 /* SplashViewController.m in Sources */,
 				EA9ACA5F18212E82003C9D12 /* AppDelegate.m in Sources */,
+				F85A2027182B7AA6001AB9A6 /* DietPlannerSimpleCell.m in Sources */,
 				EAC295511828B801003D1CCE /* DialogView.m in Sources */,
 				EAC295501828B801003D1CCE /* NIDropDown.m in Sources */,
 				EAC2953E1823FDE6003D1CCE /* DietPlannerViewController.m in Sources */,
@@ -436,6 +534,7 @@
 				EAC2953D1823FDE6003D1CCE /* DashboardViewController.m in Sources */,
 				EA9ACA5B18212E82003C9D12 /* main.m in Sources */,
 				EAC2956D1828F44F003D1CCE /* CreateDietNotifierView.m in Sources */,
+				F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +664,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SchlankFit/SchlankFit-Prefix.pch";
 				INFOPLIST_FILE = "SchlankFit/SchlankFit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty",
+					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty/SmartAd",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -578,6 +682,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SchlankFit/SchlankFit-Prefix.pch";
 				INFOPLIST_FILE = "SchlankFit/SchlankFit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty",
+					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty/SmartAd",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

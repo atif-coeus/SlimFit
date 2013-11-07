@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DietPlannerViewController : UIViewController
+@interface DietPlannerViewController : UITableViewController
 
 @end

@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "SASAdView.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [SASAdView setSiteID:27893 baseURL:@"http://mobile.smartadserver.com"];
+    [SASAdView enableTestMode];
+    
     return YES;
 }
 							

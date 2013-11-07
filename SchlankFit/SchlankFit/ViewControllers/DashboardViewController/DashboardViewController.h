@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SASBannerView.h"
+#import "SASInterstitialView.h"
 
-@interface DashboardViewController : UIViewController{
+@interface DashboardViewController : UIViewController <SASAdViewDelegate>{
     IBOutlet UIView *adContainerView;
 }
+
+@property (nonatomic, retain) SASBannerView *topBanner;
 
 @end
