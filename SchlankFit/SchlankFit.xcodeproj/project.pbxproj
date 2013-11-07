@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3C0831182BDF5A00347E44 /* StarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0830182BDF5A00347E44 /* StarRatingControl.m */; };
+		5C3C0835182BE3D100347E44 /* FilterRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */; };
+		5C49B466182BB2E4002BD406 /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */; };
 		EA9ACA4F18212E82003C9D12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA4E18212E82003C9D12 /* Foundation.framework */; };
 		EA9ACA5118212E82003C9D12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA5018212E82003C9D12 /* CoreGraphics.framework */; };
 		EA9ACA5318212E82003C9D12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA5218212E82003C9D12 /* UIKit.framework */; };
@@ -63,6 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C3C082F182BDF5A00347E44 /* StarRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarRatingControl.h; sourceTree = "<group>"; };
+		5C3C0830182BDF5A00347E44 /* StarRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarRatingControl.m; sourceTree = "<group>"; };
+		5C3C0833182BE3D000347E44 /* FilterRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterRecipeCell.h; sourceTree = "<group>"; };
+		5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterRecipeCell.m; sourceTree = "<group>"; };
+		5C49B464182BB2E4002BD406 /* RecipeBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookViewController.h; sourceTree = "<group>"; };
+		5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookViewController.m; sourceTree = "<group>"; };
 		EA9ACA4B18212E82003C9D12 /* SchlankFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchlankFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9ACA4E18212E82003C9D12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA9ACA5018212E82003C9D12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +172,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C3C082E182BDF5A00347E44 /* StarRatingControl */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C082F182BDF5A00347E44 /* StarRatingControl.h */,
+				5C3C0830182BDF5A00347E44 /* StarRatingControl.m */,
+			);
+			path = StarRatingControl;
+			sourceTree = "<group>";
+		};
+		5C3C0832182BE3AF00347E44 /* FilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C0833182BE3D000347E44 /* FilterRecipeCell.h */,
+				5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */,
+			);
+			name = FilterCell;
+			path = CustomViews/FilterCell;
+			sourceTree = "<group>";
+		};
+		5C49B463182BB2E4002BD406 /* RecipeBookViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C49B464182BB2E4002BD406 /* RecipeBookViewController.h */,
+				5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */,
+			);
+			path = RecipeBookViewController;
+			sourceTree = "<group>";
+		};
 		EA9ACA4218212E82003C9D12 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +295,7 @@
 		EAC295371823FDE6003D1CCE /* DashboardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5C49B463182BB2E4002BD406 /* RecipeBookViewController */,
 				EAC295381823FDE6003D1CCE /* DashboardViewController.h */,
 				EAC295391823FDE6003D1CCE /* DashboardViewController.m */,
 				EAC2953A1823FDE6003D1CCE /* DietPlanners */,
@@ -279,6 +317,7 @@
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				5C3C082E182BDF5A00347E44 /* StarRatingControl */,
 				F85A2004182B71BC001AB9A6 /* SmartAd */,
 				EAC295401828B801003D1CCE /* MNMRemoteImageView */,
 				EAC295431828B801003D1CCE /* NIDropDown */,
@@ -409,6 +448,7 @@
 		F85A201E182B7A67001AB9A6 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				5C3C0832182BE3AF00347E44 /* FilterCell */,
 				F85A201D182B7A31001AB9A6 /* DietPlanner */,
 			);
 			name = CustomCells;
@@ -527,6 +567,8 @@
 				EAC295511828B801003D1CCE /* DialogView.m in Sources */,
 				EAC295501828B801003D1CCE /* NIDropDown.m in Sources */,
 				EAC2953E1823FDE6003D1CCE /* DietPlannerViewController.m in Sources */,
+				5C49B466182BB2E4002BD406 /* RecipeBookViewController.m in Sources */,
+				5C3C0835182BE3D100347E44 /* FilterRecipeCell.m in Sources */,
 				EAC2954F1828B801003D1CCE /* MNMRemoteImageView.m in Sources */,
 				EAC295591828BF93003D1CCE /* CreateDietViewController.m in Sources */,
 				EAC295521828B801003D1CCE /* DownloadingAlert.m in Sources */,
@@ -534,6 +576,7 @@
 				EAC2953D1823FDE6003D1CCE /* DashboardViewController.m in Sources */,
 				EA9ACA5B18212E82003C9D12 /* main.m in Sources */,
 				EAC2956D1828F44F003D1CCE /* CreateDietNotifierView.m in Sources */,
+				5C3C0831182BDF5A00347E44 /* StarRatingControl.m in Sources */,
 				F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,8 +709,8 @@
 				INFOPLIST_FILE = "SchlankFit/SchlankFit-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty",
-					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty/SmartAd",
+					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
+					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -684,8 +727,8 @@
 				INFOPLIST_FILE = "SchlankFit/SchlankFit-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty",
-					"/Volumes/Data/CompanyProjects/SlimFit-Atif/SchlankFit/ThirdParty/SmartAd",
+					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
+					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
