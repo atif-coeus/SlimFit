@@ -47,7 +47,7 @@
     UITableViewCell *cell;
     static NSString *CellIdentifier = @"DietPlannerSimpleCell";
     cell = [DietPlannerSimpleCell tableView:tableView secondCustomCellWithIdentifier:CellIdentifier];
-    if(indexPath.row ==0){
+    if(indexPath.row == 0){
         [(DietPlannerSimpleCell*)cell setTitle:@"Eigene Diät anlegen" withSubTitle:@"Free!"];
     }
     else if (indexPath.row == 1) {

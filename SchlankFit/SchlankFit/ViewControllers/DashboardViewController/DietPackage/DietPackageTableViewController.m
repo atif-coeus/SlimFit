@@ -8,7 +8,7 @@
 
 #import "DietPackageTableViewController.h"
 #import "DietPackageCell.h"
-//#import "DietPackageDetailViewController.h"
+#import "DietPackageBuyViewController.h"
 
 @interface DietPackageTableViewController (){
     NSArray *data;
@@ -20,9 +20,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-//    DietPackageDetailViewController * detailVC = [segue destinationViewController];
+    DietPackageBuyViewController * detailVC = [segue destinationViewController];
     
-//    [detailVC setDietDict:sender];
+    [detailVC setDietDict:sender];
     
 }
 
@@ -45,14 +45,14 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    data = @[@{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"Free!", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"gekauft", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
-            @{@"icon":@"YUNAS", @"dietPackage":@"MS", @"price":@"0,89€", @"diaten":@"(35 Diäten)"}];
+    data = @[@{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"Free!", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"gekauft", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"0,89€", @"diaten":@"(35 Diäten)"},
+            @{@"icon":@"YUNAS", @"dietPackage":@"[Diet Package 1]", @"price":@"0,89€", @"diaten":@"(35 Diäten)"}];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,17 +65,18 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [data count];
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [data count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"DietPackageCell";
+
     NSDictionary *dict = data[indexPath.row];
     
     UITableViewCell *cell = [DietPackageCell tableView:tableView ownDietCellWithIdentifier:CellIdentifier];
@@ -83,16 +84,19 @@
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    // Configure the cell...
-    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSDictionary *dict = data[indexPath.row];
-    
-    [self performSegueWithIdentifier:@"Hello" sender:dict];
+    NSString *str = dict[@"price"];
+    if([str isEqualToString:@"gekauft"]){
+        [self performSegueWithIdentifier:@"DietPackageDetail" sender:dict];
+//        [self performSegueWithIdentifier:@"DietPPackageDetail" sender:nil];
+    } else {
+        [self performSegueWithIdentifier:@"DietPackageBuy" sender:dict];
+    }
 }
 
 @end

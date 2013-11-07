@@ -306,7 +306,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Eigene Diät" id="kcM-Ls-s47">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="soW-LC-r28"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="soW-LC-r28">
+                            <connections>
+                                <segue destination="bj2-cU-Hxi" kind="push" id="R8J-wN-njn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="calender" destination="P4V-HL-pFu" id="oFW-9K-7fN"/>
@@ -314,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6h-nd-ebO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="-1829"/>
+            <point key="canvasLocation" x="799" y="-1829"/>
         </scene>
         <!--Own Diet View Controller - Tag 5-->
         <scene sceneID="GQE-oJ-Zlt">
@@ -375,16 +379,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eWR-u8-yH5">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eWR-u8-yH5" id="QOQ-O5-h0i">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="qcJ-kN-aPK" id="BsI-y3-eTE"/>
                             <outlet property="delegate" destination="qcJ-kN-aPK" id="cwU-bl-Pem"/>
@@ -406,17 +400,18 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <segue destination="bbQ-Au-TYl" kind="push" identifier="Hello" id="2Mi-HS-xy0"/>
+                        <segue destination="bbQ-Au-TYl" kind="push" identifier="DietPackageBuy" id="2Mi-HS-xy0"/>
+                        <segue destination="hrG-dx-KdP" kind="push" identifier="DietPackageDetail" id="oei-xC-UqN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qo-6E-hxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1840" y="-1829"/>
         </scene>
-        <!--Diet Package Detail View Controller - [Diet Package 1] kaufen-->
+        <!--Diet Package Buy View Controller - [Diet Package 1] kaufen-->
         <scene sceneID="K20-Lo-sjI">
             <objects>
-                <viewController id="bbQ-Au-TYl" customClass="DietPackageDetailViewController" sceneMemberID="viewController">
+                <viewController id="bbQ-Au-TYl" customClass="DietPackageBuyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jZT-bV-TAe">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -458,7 +453,26 @@ einen Gutscheincode eingeben.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I71-KE-EuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2312" y="-1829"/>
+            <point key="canvasLocation" x="2414" y="-2170"/>
+        </scene>
+        <!--Diet Package Detail View Controller-->
+        <scene sceneID="0xr-MH-HmU">
+            <objects>
+                <tableViewController id="hrG-dx-KdP" customClass="DietPackageDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="uZc-hg-2PC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="hrG-dx-KdP" id="qts-22-oWQ"/>
+                            <outlet property="delegate" destination="hrG-dx-KdP" id="9GL-Qu-ATb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="goP-sO-KRY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5x-i4-FzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="-1489"/>
         </scene>
     </scenes>
     <resources>

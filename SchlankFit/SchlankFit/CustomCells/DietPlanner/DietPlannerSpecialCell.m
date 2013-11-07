@@ -40,7 +40,6 @@
     if (!cell) {
         NSArray * arr= [[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil];
         cell= [arr objectAtIndex:0];
-        cell.contentView.backgroundColor = [UIColor darkGrayColor];
     }
     return cell;
 }
