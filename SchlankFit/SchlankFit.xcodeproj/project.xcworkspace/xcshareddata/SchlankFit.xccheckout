@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AE788FBB-938D-4B35-9E10-1AF65D741712</string>
+	<string>CD8164BE-EC50-43F8-A745-D8DD6EDFF346</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SchlankFit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>27D95F84-5BA7-4ABD-BFCF-2551C9DB41D6</key>
-		<string>https://github.com/atif-coeus/SlimFit</string>
+		<key>0260700A-C2AB-4F85-8701-B300259B20DF</key>
+		<string>https://github.com/atif-coeus/SlimFit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SchlankFit/SchlankFit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>27D95F84-5BA7-4ABD-BFCF-2551C9DB41D6</key>
+		<key>0260700A-C2AB-4F85-8701-B300259B20DF</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/atif-coeus/SlimFit</string>
+	<string>https://github.com/atif-coeus/SlimFit.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>27D95F84-5BA7-4ABD-BFCF-2551C9DB41D6</string>
+	<string>0260700A-C2AB-4F85-8701-B300259B20DF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>27D95F84-5BA7-4ABD-BFCF-2551C9DB41D6</string>
+			<string>0260700A-C2AB-4F85-8701-B300259B20DF</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SlimFit-Atif</string>
+			<string>SlimFit</string>
 		</dict>
 	</array>
 </dict>
