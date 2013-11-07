@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="B6G-jG-mOV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="B6G-jG-mOV">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
@@ -308,7 +307,7 @@
                     <navigationItem key="navigationItem" title="Eigene Diät" id="kcM-Ls-s47">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="soW-LC-r28">
                             <connections>
-                                <segue destination="bj2-cU-Hxi" kind="push" id="R8J-wN-njn"/>
+                                <segue destination="bj2-cU-Hxi" kind="push" id="owk-WZ-hQQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -318,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6h-nd-ebO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="-1829"/>
+            <point key="canvasLocation" x="827" y="-1829"/>
         </scene>
         <!--Own Diet View Controller - Tag 5-->
         <scene sceneID="GQE-oJ-Zlt">
@@ -386,7 +385,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Diätpakete" id="5qw-lM-u8t">
                         <barButtonItem key="backBarButtonItem" title="Back" id="3Wu-sS-c9M"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="MyB-1h-MCw">
+                        <barButtonItem key="rightBarButtonItem" id="MyB-1h-MCw">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dbh-kN-apd">
                                 <rect key="frame" x="214" y="7" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -401,7 +400,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <segue destination="bbQ-Au-TYl" kind="push" identifier="DietPackageBuy" id="2Mi-HS-xy0"/>
-                        <segue destination="hrG-dx-KdP" kind="push" identifier="DietPackageDetail" id="oei-xC-UqN"/>
+                        <segue destination="dvq-4g-0eS" kind="push" identifier="DietPackageDetail" id="cXC-l0-yLS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qo-6E-hxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -453,26 +452,26 @@ einen Gutscheincode eingeben.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I71-KE-EuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414" y="-2170"/>
+            <point key="canvasLocation" x="2364" y="-2182"/>
         </scene>
         <!--Diet Package Detail View Controller-->
-        <scene sceneID="0xr-MH-HmU">
+        <scene sceneID="Kw0-WI-tyO">
             <objects>
-                <tableViewController id="hrG-dx-KdP" customClass="DietPackageDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="uZc-hg-2PC">
+                <tableViewController id="dvq-4g-0eS" customClass="DietPackageDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iln-9n-F0j">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
-                            <outlet property="dataSource" destination="hrG-dx-KdP" id="qts-22-oWQ"/>
-                            <outlet property="delegate" destination="hrG-dx-KdP" id="9GL-Qu-ATb"/>
+                            <outlet property="dataSource" destination="dvq-4g-0eS" id="NPk-rb-KEn"/>
+                            <outlet property="delegate" destination="dvq-4g-0eS" id="ttE-3B-Y2T"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="goP-sO-KRY"/>
+                    <navigationItem key="navigationItem" id="a0W-HW-feI"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J5x-i4-FzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGX-P0-0Kj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414" y="-1489"/>
+            <point key="canvasLocation" x="2364" y="-1476"/>
         </scene>
     </scenes>
     <resources>
