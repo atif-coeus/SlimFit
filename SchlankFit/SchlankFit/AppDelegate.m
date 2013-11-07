@@ -18,6 +18,7 @@
     [SASAdView enableTestMode];
     
     return YES;
+    //CHANGES MADE FOR CALENDAR
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
