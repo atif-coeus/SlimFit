@@ -26,11 +26,28 @@
     // Configure the view for the selected state
 }
 
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+//    [self.favorite setFrame:CGRectMake(0,0,12,12)];
+//    NSLog(@"%@",NSStringFromCGRect(self.favorite.frame));
+
+}
+
 -(void) mapDataOnCellFromDict:(NSDictionary*)data{
+
     if(data){
         [self.tageValue setText:data[@"tage"]];
         [self.dietIcon setImage:[UIImage imageNamed:data[@"icon"]]];
         [self.dietName setText:data[@"dietName"]];
+        if([data[@"favorite"] isEqualToString:@"fav"]){
+            [self.favorite setHidden:NO];
+
+            CGSize textSize = [self.dietName.text sizeWithAttributes:@{NSFontAttributeName:self.dietName.font}];
+            
+            [self.favorite setFrame:CGRectMake(self.dietName.frame.origin.x + textSize.width + 10, self.dietName.frame.size.height, self.favorite.frame.size.width, self.favorite.frame.size.height)];
+            
+        }
     }
 }
 

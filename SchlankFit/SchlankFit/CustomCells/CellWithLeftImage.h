@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tageValue;
 @property (weak, nonatomic) IBOutlet UILabel *dietName;
 @property (weak, nonatomic) IBOutlet UIImageView *dietIcon;
+@property (weak, nonatomic) IBOutlet UIImageView *favorite;
 
 -(void) mapDataOnCellFromDict:(NSDictionary*)data;
 
