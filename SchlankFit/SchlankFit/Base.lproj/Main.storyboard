@@ -233,7 +233,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Eigene Diät anlegen" id="WPi-0I-WHq">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="SCN-Nt-4xr"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="SCN-Nt-4xr">
+                            <connections>
+                                <segue destination="Jto-VQ-V8B" kind="push" id="lVV-59-t2N"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
@@ -267,12 +271,12 @@
             </objects>
             <point key="canvasLocation" x="-196" y="-1069"/>
         </scene>
-        <!--Diet Planner Calender View Controller - Eigene Diät-->
+        <!--Diet Planner Calendar View Controller - Eigene Diät-->
         <scene sceneID="5Ni-sY-09I">
             <objects>
-                <viewController id="Jto-VQ-V8B" customClass="DietPlannerCalenderViewController" sceneMemberID="viewController">
+                <viewController id="Jto-VQ-V8B" customClass="DietPlannerCalendarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LjF-JJ-6OG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag auswählen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w4r-ma-JA3">
@@ -301,11 +305,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Eigene Diät" id="kcM-Ls-s47">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="soW-LC-r28">
-                            <connections>
-                                <segue destination="bj2-cU-Hxi" kind="push" id="Aro-zp-Eie"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="soW-LC-r28"/>
                     </navigationItem>
                     <connections>
                         <outlet property="calender" destination="P4V-HL-pFu" id="oFW-9K-7fN"/>

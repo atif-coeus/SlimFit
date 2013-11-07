@@ -50,6 +50,21 @@
 		F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */; };
 		F85A2027182B7AA6001AB9A6 /* DietPlannerSimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */; };
 		F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */; };
+		F85A202C182B8D58001AB9A6 /* DietPlannerCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A202B182B8D58001AB9A6 /* DietPlannerCalendarViewController.m */; };
+		F85A204A182B8E02001AB9A6 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F85A202F182B8E02001AB9A6 /* Kal.bundle */; };
+		F85A204B182B8E02001AB9A6 /* KalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2036182B8E02001AB9A6 /* KalDataSource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A204C182B8E02001AB9A6 /* KalDate.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2038182B8E02001AB9A6 /* KalDate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A204D182B8E02001AB9A6 /* KalGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A203A182B8E02001AB9A6 /* KalGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A204E182B8E02001AB9A6 /* KalLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A203C182B8E02001AB9A6 /* KalLogic.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A204F182B8E02001AB9A6 /* KalMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A203E182B8E02001AB9A6 /* KalMonthView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A2050182B8E02001AB9A6 /* KalTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2041182B8E02001AB9A6 /* KalTileView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A2051182B8E02001AB9A6 /* KalView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2043182B8E02001AB9A6 /* KalView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A2052182B8E02001AB9A6 /* KalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2045182B8E02001AB9A6 /* KalViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A2053182B8E02001AB9A6 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2047182B8E02001AB9A6 /* NSDateAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F85A2054182B8E02001AB9A6 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2049182B8E02001AB9A6 /* UIViewAdditions.m */; };
+		F85A205C182B9899001AB9A6 /* DietPackageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A205B182B9899001AB9A6 /* DietPackageTableViewController.m */; };
+		F85A2061182B991E001AB9A6 /* DietPackageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A205F182B991E001AB9A6 /* DietPackageCell.m */; };
+		F85A2062182B991E001AB9A6 /* DietPackageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A2060182B991E001AB9A6 /* DietPackageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +74,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EA9ACA4A18212E82003C9D12;
 			remoteInfo = SchlankFit;
+		};
+		F85A2056182B8E02001AB9A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85A2031182B8E02001AB9A6 /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -129,6 +151,38 @@
 		F85A2022182B7AA6001AB9A6 /* DietPlannerSimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSimpleCell.h; sourceTree = "<group>"; };
 		F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSimpleCell.m; sourceTree = "<group>"; };
 		F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSimpleCell.xib; sourceTree = "<group>"; };
+		F85A202A182B8D58001AB9A6 /* DietPlannerCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerCalendarViewController.h; sourceTree = "<group>"; };
+		F85A202B182B8D58001AB9A6 /* DietPlannerCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerCalendarViewController.m; sourceTree = "<group>"; };
+		F85A202F182B8E02001AB9A6 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
+		F85A2030182B8E02001AB9A6 /* Kal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kal.h; sourceTree = "<group>"; };
+		F85A2031182B8E02001AB9A6 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
+		F85A2034182B8E02001AB9A6 /* Kal_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kal_Prefix.pch; sourceTree = "<group>"; };
+		F85A2035182B8E02001AB9A6 /* KalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalDataSource.h; sourceTree = "<group>"; };
+		F85A2036182B8E02001AB9A6 /* KalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalDataSource.m; sourceTree = "<group>"; };
+		F85A2037182B8E02001AB9A6 /* KalDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalDate.h; sourceTree = "<group>"; };
+		F85A2038182B8E02001AB9A6 /* KalDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalDate.m; sourceTree = "<group>"; };
+		F85A2039182B8E02001AB9A6 /* KalGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalGridView.h; sourceTree = "<group>"; };
+		F85A203A182B8E02001AB9A6 /* KalGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalGridView.m; sourceTree = "<group>"; };
+		F85A203B182B8E02001AB9A6 /* KalLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalLogic.h; sourceTree = "<group>"; };
+		F85A203C182B8E02001AB9A6 /* KalLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalLogic.m; sourceTree = "<group>"; };
+		F85A203D182B8E02001AB9A6 /* KalMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalMonthView.h; sourceTree = "<group>"; };
+		F85A203E182B8E02001AB9A6 /* KalMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalMonthView.m; sourceTree = "<group>"; };
+		F85A203F182B8E02001AB9A6 /* KalPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalPrivate.h; sourceTree = "<group>"; };
+		F85A2040182B8E02001AB9A6 /* KalTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalTileView.h; sourceTree = "<group>"; };
+		F85A2041182B8E02001AB9A6 /* KalTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalTileView.m; sourceTree = "<group>"; };
+		F85A2042182B8E02001AB9A6 /* KalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalView.h; sourceTree = "<group>"; };
+		F85A2043182B8E02001AB9A6 /* KalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalView.m; sourceTree = "<group>"; };
+		F85A2044182B8E02001AB9A6 /* KalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalViewController.h; sourceTree = "<group>"; };
+		F85A2045182B8E02001AB9A6 /* KalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalViewController.m; sourceTree = "<group>"; };
+		F85A2046182B8E02001AB9A6 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		F85A2047182B8E02001AB9A6 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		F85A2048182B8E02001AB9A6 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		F85A2049182B8E02001AB9A6 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		F85A205A182B9899001AB9A6 /* DietPackageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPackageTableViewController.h; sourceTree = "<group>"; };
+		F85A205B182B9899001AB9A6 /* DietPackageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPackageTableViewController.m; sourceTree = "<group>"; };
+		F85A205E182B991E001AB9A6 /* DietPackageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPackageCell.h; sourceTree = "<group>"; };
+		F85A205F182B991E001AB9A6 /* DietPackageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPackageCell.m; sourceTree = "<group>"; };
+		F85A2060182B991E001AB9A6 /* DietPackageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPackageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +312,8 @@
 		EAC295371823FDE6003D1CCE /* DashboardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F85A2059182B9885001AB9A6 /* DietPackage */,
+				F85A2029182B8D2B001AB9A6 /* DietPlannerCalendar */,
 				EAC295381823FDE6003D1CCE /* DashboardViewController.h */,
 				EAC295391823FDE6003D1CCE /* DashboardViewController.m */,
 				EAC2953A1823FDE6003D1CCE /* DietPlanners */,
@@ -279,6 +335,7 @@
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				F85A202D182B8E02001AB9A6 /* KalCalendar */,
 				F85A2004182B71BC001AB9A6 /* SmartAd */,
 				EAC295401828B801003D1CCE /* MNMRemoteImageView */,
 				EAC295431828B801003D1CCE /* NIDropDown */,
@@ -409,9 +466,86 @@
 		F85A201E182B7A67001AB9A6 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				F85A205D182B98E5001AB9A6 /* DietPackage */,
 				F85A201D182B7A31001AB9A6 /* DietPlanner */,
 			);
 			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		F85A2029182B8D2B001AB9A6 /* DietPlannerCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F85A202A182B8D58001AB9A6 /* DietPlannerCalendarViewController.h */,
+				F85A202B182B8D58001AB9A6 /* DietPlannerCalendarViewController.m */,
+			);
+			name = DietPlannerCalendar;
+			sourceTree = "<group>";
+		};
+		F85A202D182B8E02001AB9A6 /* KalCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F85A202E182B8E02001AB9A6 /* src */,
+			);
+			path = KalCalendar;
+			sourceTree = "<group>";
+		};
+		F85A202E182B8E02001AB9A6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F85A202F182B8E02001AB9A6 /* Kal.bundle */,
+				F85A2030182B8E02001AB9A6 /* Kal.h */,
+				F85A2031182B8E02001AB9A6 /* Kal.xcodeproj */,
+				F85A2034182B8E02001AB9A6 /* Kal_Prefix.pch */,
+				F85A2035182B8E02001AB9A6 /* KalDataSource.h */,
+				F85A2036182B8E02001AB9A6 /* KalDataSource.m */,
+				F85A2037182B8E02001AB9A6 /* KalDate.h */,
+				F85A2038182B8E02001AB9A6 /* KalDate.m */,
+				F85A2039182B8E02001AB9A6 /* KalGridView.h */,
+				F85A203A182B8E02001AB9A6 /* KalGridView.m */,
+				F85A203B182B8E02001AB9A6 /* KalLogic.h */,
+				F85A203C182B8E02001AB9A6 /* KalLogic.m */,
+				F85A203D182B8E02001AB9A6 /* KalMonthView.h */,
+				F85A203E182B8E02001AB9A6 /* KalMonthView.m */,
+				F85A203F182B8E02001AB9A6 /* KalPrivate.h */,
+				F85A2040182B8E02001AB9A6 /* KalTileView.h */,
+				F85A2041182B8E02001AB9A6 /* KalTileView.m */,
+				F85A2042182B8E02001AB9A6 /* KalView.h */,
+				F85A2043182B8E02001AB9A6 /* KalView.m */,
+				F85A2044182B8E02001AB9A6 /* KalViewController.h */,
+				F85A2045182B8E02001AB9A6 /* KalViewController.m */,
+				F85A2046182B8E02001AB9A6 /* NSDateAdditions.h */,
+				F85A2047182B8E02001AB9A6 /* NSDateAdditions.m */,
+				F85A2048182B8E02001AB9A6 /* UIViewAdditions.h */,
+				F85A2049182B8E02001AB9A6 /* UIViewAdditions.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F85A2032182B8E02001AB9A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F85A2057182B8E02001AB9A6 /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F85A2059182B9885001AB9A6 /* DietPackage */ = {
+			isa = PBXGroup;
+			children = (
+				F85A205A182B9899001AB9A6 /* DietPackageTableViewController.h */,
+				F85A205B182B9899001AB9A6 /* DietPackageTableViewController.m */,
+			);
+			name = DietPackage;
+			sourceTree = "<group>";
+		};
+		F85A205D182B98E5001AB9A6 /* DietPackage */ = {
+			isa = PBXGroup;
+			children = (
+				F85A205E182B991E001AB9A6 /* DietPackageCell.h */,
+				F85A205F182B991E001AB9A6 /* DietPackageCell.m */,
+				F85A2060182B991E001AB9A6 /* DietPackageCell.xib */,
+			);
+			name = DietPackage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +611,12 @@
 			mainGroup = EA9ACA4218212E82003C9D12;
 			productRefGroup = EA9ACA4C18212E82003C9D12 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F85A2032182B8E02001AB9A6 /* Products */;
+					ProjectRef = F85A2031182B8E02001AB9A6 /* Kal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA9ACA4A18212E82003C9D12 /* SchlankFit */,
@@ -485,16 +625,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F85A2057182B8E02001AB9A6 /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = F85A2056182B8E02001AB9A6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		EA9ACA4918212E82003C9D12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85A204A182B8E02001AB9A6 /* Kal.bundle in Resources */,
 				EAC2955D1828C626003D1CCE /* apple2.png in Resources */,
 				F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */,
 				EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */,
 				F85A2010182B71BC001AB9A6 /* sas.bundle in Resources */,
 				EA9ACA6718212E82003C9D12 /* Images.xcassets in Resources */,
+				F85A2062182B991E001AB9A6 /* DietPackageCell.xib in Resources */,
 				EAC295541828B801003D1CCE /* popupBg.png in Resources */,
 				EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */,
 				F85A2025182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib in Resources */,
@@ -523,17 +675,30 @@
 			files = (
 				EA9ACA6518212E82003C9D12 /* SplashViewController.m in Sources */,
 				EA9ACA5F18212E82003C9D12 /* AppDelegate.m in Sources */,
+				F85A2053182B8E02001AB9A6 /* NSDateAdditions.m in Sources */,
+				F85A204F182B8E02001AB9A6 /* KalMonthView.m in Sources */,
 				F85A2027182B7AA6001AB9A6 /* DietPlannerSimpleCell.m in Sources */,
+				F85A204E182B8E02001AB9A6 /* KalLogic.m in Sources */,
 				EAC295511828B801003D1CCE /* DialogView.m in Sources */,
+				F85A202C182B8D58001AB9A6 /* DietPlannerCalendarViewController.m in Sources */,
 				EAC295501828B801003D1CCE /* NIDropDown.m in Sources */,
 				EAC2953E1823FDE6003D1CCE /* DietPlannerViewController.m in Sources */,
+				F85A2050182B8E02001AB9A6 /* KalTileView.m in Sources */,
+				F85A2054182B8E02001AB9A6 /* UIViewAdditions.m in Sources */,
 				EAC2954F1828B801003D1CCE /* MNMRemoteImageView.m in Sources */,
+				F85A2051182B8E02001AB9A6 /* KalView.m in Sources */,
 				EAC295591828BF93003D1CCE /* CreateDietViewController.m in Sources */,
+				F85A204D182B8E02001AB9A6 /* KalGridView.m in Sources */,
 				EAC295521828B801003D1CCE /* DownloadingAlert.m in Sources */,
 				EAC2956E1828F44F003D1CCE /* CustomAdView.m in Sources */,
 				EAC2953D1823FDE6003D1CCE /* DashboardViewController.m in Sources */,
+				F85A204C182B8E02001AB9A6 /* KalDate.m in Sources */,
+				F85A2052182B8E02001AB9A6 /* KalViewController.m in Sources */,
 				EA9ACA5B18212E82003C9D12 /* main.m in Sources */,
+				F85A205C182B9899001AB9A6 /* DietPackageTableViewController.m in Sources */,
+				F85A204B182B8E02001AB9A6 /* KalDataSource.m in Sources */,
 				EAC2956D1828F44F003D1CCE /* CreateDietNotifierView.m in Sources */,
+				F85A2061182B991E001AB9A6 /* DietPackageCell.m in Sources */,
 				F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
