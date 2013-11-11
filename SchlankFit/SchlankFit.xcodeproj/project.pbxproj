@@ -72,6 +72,12 @@
 		F85A20A8182BBC97001AB9A6 /* OwnDietCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A20A0182BBC97001AB9A6 /* OwnDietCustomCell.xib */; };
 		F85A20AB182BBDCC001AB9A6 /* CellWithLeftImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A20AA182BBDCC001AB9A6 /* CellWithLeftImage.m */; };
 		F85A20AD182BBDDE001AB9A6 /* CellWithLeftImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A20AC182BBDDE001AB9A6 /* CellWithLeftImage.xib */; };
+		F8A0601F183092A900717B58 /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A0601E183092A900717B58 /* ShoppingListViewController.m */; };
+		F8A06026183092BC00717B58 /* ShoppingListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A06024183092BC00717B58 /* ShoppingListCell.m */; };
+		F8A06027183092BC00717B58 /* ShoppingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A06025183092BC00717B58 /* ShoppingListCell.xib */; };
+		F8A0602B183092CA00717B58 /* UnderLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A0602A183092CA00717B58 /* UnderLineLabel.m */; };
+		F8A06030183092E400717B58 /* ShoppingListNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A0602E183092E400717B58 /* ShoppingListNotifier.m */; };
+		F8A06031183092E400717B58 /* ShoppingListNotifier.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A0602F183092E400717B58 /* ShoppingListNotifier.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +208,16 @@
 		F85A20A9182BBDCC001AB9A6 /* CellWithLeftImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellWithLeftImage.h; sourceTree = "<group>"; };
 		F85A20AA182BBDCC001AB9A6 /* CellWithLeftImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellWithLeftImage.m; sourceTree = "<group>"; };
 		F85A20AC182BBDDE001AB9A6 /* CellWithLeftImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellWithLeftImage.xib; sourceTree = "<group>"; };
+		F8A0601D183092A900717B58 /* ShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListViewController.h; sourceTree = "<group>"; };
+		F8A0601E183092A900717B58 /* ShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListViewController.m; sourceTree = "<group>"; };
+		F8A06023183092BC00717B58 /* ShoppingListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListCell.h; sourceTree = "<group>"; };
+		F8A06024183092BC00717B58 /* ShoppingListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListCell.m; sourceTree = "<group>"; };
+		F8A06025183092BC00717B58 /* ShoppingListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingListCell.xib; sourceTree = "<group>"; };
+		F8A06029183092CA00717B58 /* UnderLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderLineLabel.h; sourceTree = "<group>"; };
+		F8A0602A183092CA00717B58 /* UnderLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderLineLabel.m; sourceTree = "<group>"; };
+		F8A0602D183092E400717B58 /* ShoppingListNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListNotifier.h; sourceTree = "<group>"; };
+		F8A0602E183092E400717B58 /* ShoppingListNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListNotifier.m; sourceTree = "<group>"; };
+		F8A0602F183092E400717B58 /* ShoppingListNotifier.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingListNotifier.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +347,7 @@
 		EAC295371823FDE6003D1CCE /* DashboardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F8A0601C183092A900717B58 /* ShoppingList */,
 				F85A207A182BB8E5001AB9A6 /* DietPackage */,
 				F85A207D182BB8E5001AB9A6 /* DietPackageBuy */,
 				F85A2080182BB8E5001AB9A6 /* DietPackageDetail */,
@@ -357,6 +374,7 @@
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				F8A06028183092CA00717B58 /* UnderLineLabel */,
 				F85A202D182B8E02001AB9A6 /* KalCalendar */,
 				F85A2004182B71BC001AB9A6 /* SmartAd */,
 				EAC295401828B801003D1CCE /* MNMRemoteImageView */,
@@ -421,6 +439,7 @@
 		EAC295641828F44F003D1CCE /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F8A0602C183092E400717B58 /* ShoppingListNotifierView */,
 				EAC295651828F44F003D1CCE /* CreateDietNotifierView */,
 				EAC295681828F44F003D1CCE /* CustomAdView */,
 			);
@@ -567,6 +586,7 @@
 		F85A2091182BBC97001AB9A6 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				F8A06022183092BC00717B58 /* ShoppingList */,
 				F85A2092182BBC97001AB9A6 /* DietPackage */,
 				F85A2096182BBC97001AB9A6 /* DietPlanner */,
 				F85A209D182BBC97001AB9A6 /* OwnDiet */,
@@ -608,6 +628,44 @@
 				F85A20A0182BBC97001AB9A6 /* OwnDietCustomCell.xib */,
 			);
 			path = OwnDiet;
+			sourceTree = "<group>";
+		};
+		F8A0601C183092A900717B58 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				F8A0601D183092A900717B58 /* ShoppingListViewController.h */,
+				F8A0601E183092A900717B58 /* ShoppingListViewController.m */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		F8A06022183092BC00717B58 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				F8A06023183092BC00717B58 /* ShoppingListCell.h */,
+				F8A06024183092BC00717B58 /* ShoppingListCell.m */,
+				F8A06025183092BC00717B58 /* ShoppingListCell.xib */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		F8A06028183092CA00717B58 /* UnderLineLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F8A06029183092CA00717B58 /* UnderLineLabel.h */,
+				F8A0602A183092CA00717B58 /* UnderLineLabel.m */,
+			);
+			path = UnderLineLabel;
+			sourceTree = "<group>";
+		};
+		F8A0602C183092E400717B58 /* ShoppingListNotifierView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A0602D183092E400717B58 /* ShoppingListNotifier.h */,
+				F8A0602E183092E400717B58 /* ShoppingListNotifier.m */,
+				F8A0602F183092E400717B58 /* ShoppingListNotifier.xib */,
+			);
+			path = ShoppingListNotifierView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -703,6 +761,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85A204A182B8E02001AB9A6 /* Kal.bundle in Resources */,
+				F8A06027183092BC00717B58 /* ShoppingListCell.xib in Resources */,
+				F8A06031183092E400717B58 /* ShoppingListNotifier.xib in Resources */,
 				EAC2955D1828C626003D1CCE /* apple2.png in Resources */,
 				F85A20A6182BBC97001AB9A6 /* DietPlannerSpecialCell.xib in Resources */,
 				EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */,
@@ -738,6 +798,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9ACA6518212E82003C9D12 /* SplashViewController.m in Sources */,
+				F8A06026183092BC00717B58 /* ShoppingListCell.m in Sources */,
 				EA9ACA5F18212E82003C9D12 /* AppDelegate.m in Sources */,
 				F85A2053182B8E02001AB9A6 /* NSDateAdditions.m in Sources */,
 				F85A208C182BB8E5001AB9A6 /* DietPlannerCalendarViewController.m in Sources */,
@@ -758,13 +819,16 @@
 				EAC295591828BF93003D1CCE /* CreateDietViewController.m in Sources */,
 				F85A204D182B8E02001AB9A6 /* KalGridView.m in Sources */,
 				F85A208D182BB8E5001AB9A6 /* OwnDietViewController.m in Sources */,
+				F8A0601F183092A900717B58 /* ShoppingListViewController.m in Sources */,
 				EAC295521828B801003D1CCE /* DownloadingAlert.m in Sources */,
 				EAC2956E1828F44F003D1CCE /* CustomAdView.m in Sources */,
+				F8A06030183092E400717B58 /* ShoppingListNotifier.m in Sources */,
 				EAC2953D1823FDE6003D1CCE /* DashboardViewController.m in Sources */,
 				F85A20AB182BBDCC001AB9A6 /* CellWithLeftImage.m in Sources */,
 				F85A204C182B8E02001AB9A6 /* KalDate.m in Sources */,
 				F85A20A1182BBC97001AB9A6 /* DietPackageCell.m in Sources */,
 				F85A2052182B8E02001AB9A6 /* KalViewController.m in Sources */,
+				F8A0602B183092CA00717B58 /* UnderLineLabel.m in Sources */,
 				EA9ACA5B18212E82003C9D12 /* main.m in Sources */,
 				F85A204B182B8E02001AB9A6 /* KalDataSource.m in Sources */,
 				EAC2956D1828F44F003D1CCE /* CreateDietNotifierView.m in Sources */,
