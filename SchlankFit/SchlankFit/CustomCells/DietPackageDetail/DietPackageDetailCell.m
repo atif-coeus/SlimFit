@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Prinovis. All rights reserved.
 //
 
-#import "CellWithLeftImage.h"
+#import "DietPackageDetailCell.h"
 
-@implementation CellWithLeftImage
+@implementation DietPackageDetailCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -51,10 +51,10 @@
     }
 }
 
-+(CellWithLeftImage *) tableView:(UITableView*)tableView cellWithLeftImageWithIdentifier:(NSString*)identifier {
-    CellWithLeftImage * cell = nil ;
++(DietPackageDetailCell *) tableView:(UITableView*)tableView cellWithLeftImageWithIdentifier:(NSString*)identifier {
+    DietPackageDetailCell * cell = nil ;
     
-    cell = (CellWithLeftImage*)[tableView dequeueReusableCellWithIdentifier:identifier];
+    cell = (DietPackageDetailCell*)[tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         NSArray * arr= [[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil];
         cell= [arr objectAtIndex:0];

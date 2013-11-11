@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CellWithLeftImage : UITableViewCell
+@interface DietPackageDetailCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *tageValue;
 @property (weak, nonatomic) IBOutlet UILabel *dietName;
@@ -17,6 +17,6 @@
 
 -(void) mapDataOnCellFromDict:(NSDictionary*)data;
 
-+(CellWithLeftImage *) tableView:(UITableView*)tableView cellWithLeftImageWithIdentifier:(NSString*)identifier;
++(DietPackageDetailCell *) tableView:(UITableView*)tableView cellWithLeftImageWithIdentifier:(NSString*)identifier;
 
 @end

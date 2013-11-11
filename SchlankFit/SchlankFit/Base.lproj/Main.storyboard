@@ -175,7 +175,11 @@
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="Bild der Frau - Schlank &amp; Fit" id="M9Q-oj-sCq">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="l13-KI-kKy"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="l13-KI-kKy">
+                            <connections>
+                                <segue destination="hbQ-eU-w02" kind="push" id="5aj-jv-TyF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="adContainerView" destination="O0a-xn-XiK" id="YAo-n8-IJI"/>
@@ -184,6 +188,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xch-Px-GKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-284" y="7"/>
+        </scene>
+        <!--Account View Controller - Schlank & Fit-->
+        <scene sceneID="qn4-0i-fh2">
+            <objects>
+                <tableViewController id="hbQ-eU-w02" customClass="AccountViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sLO-LM-55L">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="hbQ-eU-w02" id="Gwk-4a-MR4"/>
+                            <outlet property="delegate" destination="hbQ-eU-w02" id="542-NU-T4A"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schlank &amp; Fit" id="OnW-4t-Y5c"/>
+                    <connections>
+                        <segue destination="Hcg-fc-xjM" kind="push" identifier="MainProfile" id="aEB-zZ-s9P"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AWm-vS-7Vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="7"/>
+        </scene>
+        <!--Main Profile View Controller - Mein Profil-->
+        <scene sceneID="Rky-F3-Dxk">
+            <objects>
+                <viewController id="Hcg-fc-xjM" customClass="MainProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="STI-GY-H4C">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" id="chQ-Ur-Dvg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="pers. Angaben"/>
+                                    <segment>
+                                        <string key="title">Leistung &amp;
+Ernährung</string>
+                                    </segment>
+                                    <segment>
+                                        <string key="title">Diätdauer &amp;
+Wunsch-
+gewicht</string>
+                                    </segment>
+                                    <segment title="Gewichts- verlauf"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tabChanged:" destination="Hcg-fc-xjM" eventType="valueChanged" id="tU4-xh-CJ7"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mein Profil" id="TQQ-RA-gW1"/>
+                    <connections>
+                        <outlet property="Segment" destination="chQ-Ur-Dvg" id="XnU-SK-POp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrI-w6-qRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="7"/>
         </scene>
         <!--Create Diet View Controller - Eigene Diät anlegen-->
         <scene sceneID="mjL-fg-09T">

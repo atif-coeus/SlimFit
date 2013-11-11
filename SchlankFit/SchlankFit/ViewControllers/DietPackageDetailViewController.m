@@ -7,7 +7,7 @@
 //
 
 #import "DietPackageDetailViewController.h"
-#import "CellWithLeftImage.h"
+#import "DietPackageDetailCell.h"
 
 @interface DietPackageDetailViewController ()
 
@@ -74,12 +74,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"CellWithLeftImage";
+    static NSString *CellIdentifier = @"DietPackageDetailCell";
     NSDictionary *dict = data[indexPath.row];
     
-    UITableViewCell *cell = [CellWithLeftImage tableView:tableView cellWithLeftImageWithIdentifier:CellIdentifier];
-    [(CellWithLeftImage*)cell mapDataOnCellFromDict:dict];
-//    [((CellWithLeftImage*)cell).favorite setFrame:CGRectMake(0,0,12,12)];
+    UITableViewCell *cell = [DietPackageDetailCell tableView:tableView cellWithLeftImageWithIdentifier:CellIdentifier];
+    [(DietPackageDetailCell*)cell mapDataOnCellFromDict:dict];
+//    [((DietPackageDetailCell*)cell).favorite setFrame:CGRectMake(0,0,12,12)];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
