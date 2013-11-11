@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45FECCFE1830BB2E00F7D5F8 /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FECCFC1830BB2E00F7D5F8 /* libSmartAdServer.a */; };
+		45FECCFF1830BB2E00F7D5F8 /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45FECCFD1830BB2E00F7D5F8 /* sas.bundle */; };
 		5C3C0831182BDF5A00347E44 /* StarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0830182BDF5A00347E44 /* StarRatingControl.m */; };
 		5C3C0835182BE3D100347E44 /* FilterRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */; };
 		5C49B466182BB2E4002BD406 /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */; };
@@ -41,8 +43,6 @@
 		EAC2956E1828F44F003D1CCE /* CustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2956B1828F44F003D1CCE /* CustomAdView.m */; };
 		EAC2956F1828F44F003D1CCE /* CustomAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC2956C1828F44F003D1CCE /* CustomAdView.xib */; };
 		EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */; };
-		F85A200F182B71BC001AB9A6 /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A200D182B71BC001AB9A6 /* libSmartAdServer.a */; };
-		F85A2010182B71BC001AB9A6 /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F85A200E182B71BC001AB9A6 /* sas.bundle */; };
 		F85A2012182B72E1001AB9A6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2011182B72E1001AB9A6 /* CoreMotion.framework */; };
 		F85A2014182B72FE001AB9A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */; };
 		F85A2016182B7307001AB9A6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2015182B7307001AB9A6 /* AdSupport.framework */; };
@@ -66,6 +66,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45FECCF51830BB2E00F7D5F8 /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
+		45FECCF61830BB2E00F7D5F8 /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
+		45FECCF71830BB2E00F7D5F8 /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
+		45FECCF81830BB2E00F7D5F8 /* SASInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASInterstitialView.h; sourceTree = "<group>"; };
+		45FECCF91830BB2E00F7D5F8 /* SmartAdServerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerAd.h; sourceTree = "<group>"; };
+		45FECCFA1830BB2E00F7D5F8 /* SmartAdServerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerView.h; sourceTree = "<group>"; };
+		45FECCFB1830BB2E00F7D5F8 /* SmartAdServerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerViewDelegate.h; sourceTree = "<group>"; };
+		45FECCFC1830BB2E00F7D5F8 /* libSmartAdServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartAdServer.a; sourceTree = "<group>"; };
+		45FECCFD1830BB2E00F7D5F8 /* sas.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sas.bundle; sourceTree = "<group>"; };
 		5C3C082F182BDF5A00347E44 /* StarRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarRatingControl.h; sourceTree = "<group>"; };
 		5C3C0830182BDF5A00347E44 /* StarRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarRatingControl.m; sourceTree = "<group>"; };
 		5C3C0833182BE3D000347E44 /* FilterRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterRecipeCell.h; sourceTree = "<group>"; };
@@ -117,15 +126,6 @@
 		EAC2956B1828F44F003D1CCE /* CustomAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAdView.m; sourceTree = "<group>"; };
 		EAC2956C1828F44F003D1CCE /* CustomAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAdView.xib; sourceTree = "<group>"; };
 		EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateDietNotifierView.xib; sourceTree = "<group>"; };
-		F85A2006182B71BC001AB9A6 /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
-		F85A2007182B71BC001AB9A6 /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
-		F85A2008182B71BC001AB9A6 /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
-		F85A2009182B71BC001AB9A6 /* SASInterstitialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASInterstitialView.h; sourceTree = "<group>"; };
-		F85A200A182B71BC001AB9A6 /* SmartAdServerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerAd.h; sourceTree = "<group>"; };
-		F85A200B182B71BC001AB9A6 /* SmartAdServerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerView.h; sourceTree = "<group>"; };
-		F85A200C182B71BC001AB9A6 /* SmartAdServerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartAdServerViewDelegate.h; sourceTree = "<group>"; };
-		F85A200D182B71BC001AB9A6 /* libSmartAdServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartAdServer.a; sourceTree = "<group>"; };
-		F85A200E182B71BC001AB9A6 /* sas.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sas.bundle; sourceTree = "<group>"; };
 		F85A2011182B72E1001AB9A6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F85A2015182B7307001AB9A6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -150,11 +150,11 @@
 				F85A201A182B7363001AB9A6 /* EventKit.framework in Frameworks */,
 				EA9ACA5118212E82003C9D12 /* CoreGraphics.framework in Frameworks */,
 				F85A2018182B730F001AB9A6 /* MediaPlayer.framework in Frameworks */,
+				45FECCFE1830BB2E00F7D5F8 /* libSmartAdServer.a in Frameworks */,
 				F85A2016182B7307001AB9A6 /* AdSupport.framework in Frameworks */,
 				F85A2014182B72FE001AB9A6 /* SystemConfiguration.framework in Frameworks */,
 				F85A2012182B72E1001AB9A6 /* CoreMotion.framework in Frameworks */,
 				EAC2955F1828C6F9003D1CCE /* QuartzCore.framework in Frameworks */,
-				F85A200F182B71BC001AB9A6 /* libSmartAdServer.a in Frameworks */,
 				EA9ACA4F18212E82003C9D12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +172,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45FECCF31830BB2E00F7D5F8 /* SmartAd */ = {
+			isa = PBXGroup;
+			children = (
+				45FECCF41830BB2E00F7D5F8 /* headers */,
+				45FECCFC1830BB2E00F7D5F8 /* libSmartAdServer.a */,
+				45FECCFD1830BB2E00F7D5F8 /* sas.bundle */,
+			);
+			path = SmartAd;
+			sourceTree = "<group>";
+		};
+		45FECCF41830BB2E00F7D5F8 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				45FECCF51830BB2E00F7D5F8 /* SASAdView.h */,
+				45FECCF61830BB2E00F7D5F8 /* SASAdViewDelegate.h */,
+				45FECCF71830BB2E00F7D5F8 /* SASBannerView.h */,
+				45FECCF81830BB2E00F7D5F8 /* SASInterstitialView.h */,
+				45FECCF91830BB2E00F7D5F8 /* SmartAdServerAd.h */,
+				45FECCFA1830BB2E00F7D5F8 /* SmartAdServerView.h */,
+				45FECCFB1830BB2E00F7D5F8 /* SmartAdServerViewDelegate.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
 		5C3C082E182BDF5A00347E44 /* StarRatingControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,8 +341,8 @@
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				45FECCF31830BB2E00F7D5F8 /* SmartAd */,
 				5C3C082E182BDF5A00347E44 /* StarRatingControl */,
-				F85A2004182B71BC001AB9A6 /* SmartAd */,
 				EAC295401828B801003D1CCE /* MNMRemoteImageView */,
 				EAC295431828B801003D1CCE /* NIDropDown */,
 				EAC295461828B801003D1CCE /* PopUp */,
@@ -405,30 +429,6 @@
 				EAC2956C1828F44F003D1CCE /* CustomAdView.xib */,
 			);
 			path = CustomAdView;
-			sourceTree = "<group>";
-		};
-		F85A2004182B71BC001AB9A6 /* SmartAd */ = {
-			isa = PBXGroup;
-			children = (
-				F85A2005182B71BC001AB9A6 /* headers */,
-				F85A200D182B71BC001AB9A6 /* libSmartAdServer.a */,
-				F85A200E182B71BC001AB9A6 /* sas.bundle */,
-			);
-			path = SmartAd;
-			sourceTree = "<group>";
-		};
-		F85A2005182B71BC001AB9A6 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				F85A2006182B71BC001AB9A6 /* SASAdView.h */,
-				F85A2007182B71BC001AB9A6 /* SASAdViewDelegate.h */,
-				F85A2008182B71BC001AB9A6 /* SASBannerView.h */,
-				F85A2009182B71BC001AB9A6 /* SASInterstitialView.h */,
-				F85A200A182B71BC001AB9A6 /* SmartAdServerAd.h */,
-				F85A200B182B71BC001AB9A6 /* SmartAdServerView.h */,
-				F85A200C182B71BC001AB9A6 /* SmartAdServerViewDelegate.h */,
-			);
-			path = headers;
 			sourceTree = "<group>";
 		};
 		F85A201D182B7A31001AB9A6 /* DietPlanner */ = {
@@ -533,7 +533,7 @@
 				EAC2955D1828C626003D1CCE /* apple2.png in Resources */,
 				F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */,
 				EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */,
-				F85A2010182B71BC001AB9A6 /* sas.bundle in Resources */,
+				45FECCFF1830BB2E00F7D5F8 /* sas.bundle in Resources */,
 				EA9ACA6718212E82003C9D12 /* Images.xcassets in Resources */,
 				EAC295541828B801003D1CCE /* popupBg.png in Resources */,
 				EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */,
@@ -709,8 +709,7 @@
 				INFOPLIST_FILE = "SchlankFit/SchlankFit-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
-					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
+					"/Users/air/yunas-air/iPhoneProjects/COEUS/Prinovis/SlimFit/SchlankFit/ThirdParty/SmartAd",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -727,8 +726,7 @@
 				INFOPLIST_FILE = "SchlankFit/SchlankFit-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
-					/OfficeWork/SlimFit/SchlankFit/ThirdParty/SmartAd,
+					"/Users/air/yunas-air/iPhoneProjects/COEUS/Prinovis/SlimFit/SchlankFit/ThirdParty/SmartAd",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
