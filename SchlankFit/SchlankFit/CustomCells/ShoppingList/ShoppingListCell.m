@@ -31,23 +31,30 @@
     [self.editView setHidden:NO];
 }
 
-- (IBAction)showUnits:(id)sender {
+//- (IBAction)showUnits:(id)sender {
 //    NSArray *arr = @[@"1 Tag", @"2 Tage", @"3 Tage", @"4 Tage", @"5 Tage", @"6 Tage", @"7 Tage", @"8 Tage", @"9 Tage"];
+////
+////    NSArray * arrImage = nil;
+////    
+////    if(dropDown == nil) {
+////        
+////        CGFloat f = 200;
+////        dropDown =[[NIDropDown alloc] showDropDown:sender withHeight:&f withTexts:arr havingImages:arrImage andDirection:DropDownOpeningDirection_Down];
+////        dropDown.delegate = self;
+////        
+////    }
+////    else {
+////        [dropDown hideDropDown:sender];
+////        dropDown = nil;
+////    }
 //    
-//    NSArray * arrImage = nil;
 //    
-//    if(dropDown == nil) {
-//        
-//        CGFloat f = 200;
-//        dropDown =[[NIDropDown alloc] showDropDown:sender withHeight:&f withTexts:arr havingImages:arrImage andDirection:DropDownOpeningDirection_Down];
-//        dropDown.delegate = self;
-//        
-//    }
-//    else {
-//        [dropDown hideDropDown:sender];
-//        dropDown = nil;
-//    }
-}
+//    dropDownPicker = [DropDownController new];
+//    [dropDownPicker setDataArr:arr];
+//    [dropDownPicker setDelegate:nil];
+//    
+//    
+//}
 
 - (void) niDropDownDelegateMethod: (NIDropDown *) sender {
     dropDown = nil;

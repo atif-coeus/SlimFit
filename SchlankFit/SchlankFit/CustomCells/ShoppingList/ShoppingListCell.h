@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "NIDropDown.h"
+#import "DropDownController.h"
 
 @interface ShoppingListCell : UITableViewCell<NIDropDownDelegate>{
     NIDropDown *dropDown;
+    DropDownController *dropDownPicker;
 }
 
 @property (nonatomic,weak) IBOutlet UITextField *itemAmount;

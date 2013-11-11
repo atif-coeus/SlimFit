@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EA9ACA4A18212E82003C9D12"
-               BuildableName = "SchlankFit.app"
-               BlueprintName = "SchlankFit"
-               ReferencedContainer = "container:SchlankFit.xcodeproj">
+               BlueprintIdentifier = "D2AAC07D0554694100DB518D"
+               BuildableName = "libKal.a"
+               BlueprintName = "Kal"
+               ReferencedContainer = "container:Kal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EA9ACA6B18212E82003C9D12"
-               BuildableName = "SchlankFitTests.xctest"
-               BlueprintName = "SchlankFitTests"
-               ReferencedContainer = "container:SchlankFit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EA9ACA4A18212E82003C9D12"
-            BuildableName = "SchlankFit.app"
-            BlueprintName = "SchlankFit"
-            ReferencedContainer = "container:SchlankFit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EA9ACA4A18212E82003C9D12"
-            BuildableName = "SchlankFit.app"
-            BlueprintName = "SchlankFit"
-            ReferencedContainer = "container:SchlankFit.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EA9ACA4A18212E82003C9D12"
-            BuildableName = "SchlankFit.app"
-            BlueprintName = "SchlankFit"
-            ReferencedContainer = "container:SchlankFit.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
