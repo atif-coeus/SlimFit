@@ -155,6 +155,28 @@ const NSString *strikeThroughKey = @"strikethrough";
 //    cell.editingAccessoryView = accessoryView;
 //}
 
+#pragma mark - DropDown Delegate Method
+-(void) itemSelectedWithText:(NSString*)text atIndex:(int)index{
+    
+    NSLog(@"%s %@",__PRETTY_FUNCTION__,text);
+    
+}
+
+- (void) itemUnitPressed:(UIButton*)sender{
+    
+    NSArray *arr = @[@"1 Tag", @"2 Tage", @"3 Tage", @"4 Tage", @"5 Tage", @"6 Tage", @"7 Tage", @"8 Tage", @"9 Tage"];
+    
+    if (dropDownPicker) {
+        dropDownPicker = nil;
+    }
+    
+    dropDownPicker = [DropDownController new];
+    [dropDownPicker setDataArr:arr];
+    [dropDownPicker setDelegate:self];
+    [dropDownPicker presentDropDownInView:self.view];
+
+}
+
 -(ShoppingListCell*)tableView:(UITableView*)tableView shoppingListCellWithIdentifier:(NSString*)identifier andData:(NSDictionary*)dict
 {
     UnderLineLabel *mLabel;
@@ -162,7 +184,7 @@ const NSString *strikeThroughKey = @"strikethrough";
     ShoppingListCell *cell = (ShoppingListCell*)[tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
         
-        NSArray * arr= [[NSBundle mainBundle] loadNibNamed:identifier owner:self options:nil];
+        NSArray * arr= [[NSBundle mainBundle] loadNibNamed:@"ShoppingListCell" owner:self options:nil];
         cell= [arr objectAtIndex:0];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -178,6 +200,7 @@ const NSString *strikeThroughKey = @"strikethrough";
         [cell.itemUnit setTitle:dict[itemUnitKey] forState:UIControlStateNormal];
         [cell.itemName setPlaceholder:dict[itemNameKey]];
         [cell.itemAmount setPlaceholder:dict[itemAmoutKey]];
+        [cell.itemUnit addTarget:self action:@selector(itemUnitPressed:) forControlEvents:UIControlEventTouchUpInside];
         
     } else {
         mLabel = (UnderLineLabel *)[cell.contentView viewWithTag:100];

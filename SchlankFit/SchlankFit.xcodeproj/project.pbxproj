@@ -48,6 +48,8 @@
 		4562C3821830C4F500A07540 /* KalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3751830C4F500A07540 /* KalViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4562C3831830C4F500A07540 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3771830C4F500A07540 /* NSDateAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4562C3841830C4F500A07540 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3791830C4F500A07540 /* UIViewAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C38C18310B5A00A07540 /* DropDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C38A18310B5A00A07540 /* DropDownController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C38D18310B5A00A07540 /* DropDownController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C38B18310B5A00A07540 /* DropDownController.xib */; };
 		45FECCFE1830BB2E00F7D5F8 /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FECCFC1830BB2E00F7D5F8 /* libSmartAdServer.a */; };
 		45FECCFF1830BB2E00F7D5F8 /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45FECCFD1830BB2E00F7D5F8 /* sas.bundle */; };
 		5C3C0831182BDF5A00347E44 /* StarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0830182BDF5A00347E44 /* StarRatingControl.m */; };
@@ -177,6 +179,9 @@
 		4562C3771830C4F500A07540 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
 		4562C3781830C4F500A07540 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		4562C3791830C4F500A07540 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		4562C38918310B5A00A07540 /* DropDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownController.h; sourceTree = "<group>"; };
+		4562C38A18310B5A00A07540 /* DropDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownController.m; sourceTree = "<group>"; };
+		4562C38B18310B5A00A07540 /* DropDownController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownController.xib; sourceTree = "<group>"; };
 		45FECCF51830BB2E00F7D5F8 /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
 		45FECCF61830BB2E00F7D5F8 /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
 		45FECCF71830BB2E00F7D5F8 /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
@@ -525,6 +530,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4562C38818310B5A00A07540 /* DropDownController */ = {
+			isa = PBXGroup;
+			children = (
+				4562C38918310B5A00A07540 /* DropDownController.h */,
+				4562C38A18310B5A00A07540 /* DropDownController.m */,
+				4562C38B18310B5A00A07540 /* DropDownController.xib */,
+			);
+			path = DropDownController;
+			sourceTree = "<group>";
+		};
 		45FECCF31830BB2E00F7D5F8 /* SmartAd */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +668,7 @@
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				4562C38818310B5A00A07540 /* DropDownController */,
 				4562C35D1830C4F500A07540 /* KalCalendar */,
 				4562C31A1830C47700A07540 /* UnderLineLabel */,
 				45FECCF31830BB2E00F7D5F8 /* SmartAd */,
@@ -802,6 +818,7 @@
 				EAC2955D1828C626003D1CCE /* apple2.png in Resources */,
 				EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */,
 				4562C37A1830C4F500A07540 /* Kal.bundle in Resources */,
+				4562C38D18310B5A00A07540 /* DropDownController.xib in Resources */,
 				4562C3151830C45500A07540 /* DietPlannerSpecialCell.xib in Resources */,
 				45FECCFF1830BB2E00F7D5F8 /* sas.bundle in Resources */,
 				4562C3111830C45500A07540 /* DietPackageCell.xib in Resources */,
@@ -867,6 +884,7 @@
 				4562C37B1830C4F500A07540 /* KalDataSource.m in Sources */,
 				4562C3161830C45500A07540 /* OwnDietCustomCell.m in Sources */,
 				4562C37C1830C4F500A07540 /* KalDate.m in Sources */,
+				4562C38C18310B5A00A07540 /* DropDownController.m in Sources */,
 				4562C3821830C4F500A07540 /* KalViewController.m in Sources */,
 				EAC295521828B801003D1CCE /* DownloadingAlert.m in Sources */,
 				EA9ACA5B18212E82003C9D12 /* main.m in Sources */,
