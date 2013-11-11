@@ -7,11 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4562C30E1830C45500A07540 /* CellWithLeftImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C2F91830C45500A07540 /* CellWithLeftImage.m */; };
+		4562C30F1830C45500A07540 /* CellWithLeftImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C2FA1830C45500A07540 /* CellWithLeftImage.xib */; };
+		4562C3101830C45500A07540 /* DietPackageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C2FD1830C45500A07540 /* DietPackageCell.m */; };
+		4562C3111830C45500A07540 /* DietPackageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C2FE1830C45500A07540 /* DietPackageCell.xib */; };
+		4562C3121830C45500A07540 /* DietPlannerSimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3011830C45500A07540 /* DietPlannerSimpleCell.m */; };
+		4562C3131830C45500A07540 /* DietPlannerSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C3021830C45500A07540 /* DietPlannerSimpleCell.xib */; };
+		4562C3141830C45500A07540 /* DietPlannerSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3041830C45500A07540 /* DietPlannerSpecialCell.m */; };
+		4562C3151830C45500A07540 /* DietPlannerSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C3051830C45500A07540 /* DietPlannerSpecialCell.xib */; };
+		4562C3161830C45500A07540 /* OwnDietCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3081830C45500A07540 /* OwnDietCustomCell.m */; };
+		4562C3171830C45500A07540 /* OwnDietCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C3091830C45500A07540 /* OwnDietCustomCell.xib */; };
+		4562C3181830C45500A07540 /* ShoppingListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C30C1830C45500A07540 /* ShoppingListCell.m */; };
+		4562C3191830C45500A07540 /* ShoppingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C30D1830C45500A07540 /* ShoppingListCell.xib */; };
+		4562C31D1830C47700A07540 /* UnderLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C31C1830C47700A07540 /* UnderLineLabel.m */; };
+		4562C33C1830C4C900A07540 /* CreateDietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3211830C4C900A07540 /* CreateDietViewController.m */; };
+		4562C33D1830C4C900A07540 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3231830C4C900A07540 /* DashboardViewController.m */; };
+		4562C33E1830C4C900A07540 /* DietPackageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3261830C4C900A07540 /* DietPackageTableViewController.m */; };
+		4562C33F1830C4C900A07540 /* DietPackageBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3291830C4C900A07540 /* DietPackageBuyViewController.m */; };
+		4562C3401830C4C900A07540 /* DietPackageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C32C1830C4C900A07540 /* DietPackageDetailViewController.m */; };
+		4562C3411830C4C900A07540 /* DietPlannerCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C32F1830C4C900A07540 /* DietPlannerCalendarViewController.m */; };
+		4562C3421830C4C900A07540 /* DietPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3321830C4C900A07540 /* DietPlannerViewController.m */; };
+		4562C3431830C4C900A07540 /* OwnDietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3351830C4C900A07540 /* OwnDietViewController.m */; };
+		4562C3441830C4C900A07540 /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3381830C4C900A07540 /* RecipeBookViewController.m */; };
+		4562C3451830C4C900A07540 /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C33B1830C4C900A07540 /* ShoppingListViewController.m */; };
+		4562C3561830C4E700A07540 /* CreateDietNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3491830C4E700A07540 /* CreateDietNotifierView.m */; };
+		4562C3571830C4E700A07540 /* CreateDietNotifierView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C34A1830C4E700A07540 /* CreateDietNotifierView.xib */; };
+		4562C3581830C4E700A07540 /* CustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C34D1830C4E700A07540 /* CustomAdView.m */; };
+		4562C3591830C4E700A07540 /* CustomAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C34E1830C4E700A07540 /* CustomAdView.xib */; };
+		4562C35A1830C4E700A07540 /* FilterRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3511830C4E700A07540 /* FilterRecipeCell.m */; };
+		4562C35B1830C4E700A07540 /* ShoppingListNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3541830C4E700A07540 /* ShoppingListNotifier.m */; };
+		4562C35C1830C4E700A07540 /* ShoppingListNotifier.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562C3551830C4E700A07540 /* ShoppingListNotifier.xib */; };
+		4562C37A1830C4F500A07540 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4562C35F1830C4F500A07540 /* Kal.bundle */; };
+		4562C37B1830C4F500A07540 /* KalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3661830C4F500A07540 /* KalDataSource.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C37C1830C4F500A07540 /* KalDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3681830C4F500A07540 /* KalDate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C37D1830C4F500A07540 /* KalGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C36A1830C4F500A07540 /* KalGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C37E1830C4F500A07540 /* KalLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C36C1830C4F500A07540 /* KalLogic.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C37F1830C4F500A07540 /* KalMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C36E1830C4F500A07540 /* KalMonthView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C3801830C4F500A07540 /* KalTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3711830C4F500A07540 /* KalTileView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C3811830C4F500A07540 /* KalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3731830C4F500A07540 /* KalView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C3821830C4F500A07540 /* KalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3751830C4F500A07540 /* KalViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C3831830C4F500A07540 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3771830C4F500A07540 /* NSDateAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4562C3841830C4F500A07540 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4562C3791830C4F500A07540 /* UIViewAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		45FECCFE1830BB2E00F7D5F8 /* libSmartAdServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FECCFC1830BB2E00F7D5F8 /* libSmartAdServer.a */; };
 		45FECCFF1830BB2E00F7D5F8 /* sas.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45FECCFD1830BB2E00F7D5F8 /* sas.bundle */; };
 		5C3C0831182BDF5A00347E44 /* StarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0830182BDF5A00347E44 /* StarRatingControl.m */; };
-		5C3C0835182BE3D100347E44 /* FilterRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */; };
-		5C49B466182BB2E4002BD406 /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */; };
 		EA9ACA4F18212E82003C9D12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA4E18212E82003C9D12 /* Foundation.framework */; };
 		EA9ACA5118212E82003C9D12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA5018212E82003C9D12 /* CoreGraphics.framework */; };
 		EA9ACA5318212E82003C9D12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA5218212E82003C9D12 /* UIKit.framework */; };
@@ -26,8 +65,6 @@
 		EA9ACA7018212E82003C9D12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9ACA5218212E82003C9D12 /* UIKit.framework */; };
 		EA9ACA7818212E82003C9D12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA9ACA7618212E82003C9D12 /* InfoPlist.strings */; };
 		EA9ACA7A18212E82003C9D12 /* SchlankFitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9ACA7918212E82003C9D12 /* SchlankFitTests.m */; };
-		EAC2953D1823FDE6003D1CCE /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC295391823FDE6003D1CCE /* DashboardViewController.m */; };
-		EAC2953E1823FDE6003D1CCE /* DietPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2953C1823FDE6003D1CCE /* DietPlannerViewController.m */; };
 		EAC2954F1828B801003D1CCE /* MNMRemoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC295421828B801003D1CCE /* MNMRemoteImageView.m */; };
 		EAC295501828B801003D1CCE /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC295451828B801003D1CCE /* NIDropDown.m */; };
 		EAC295511828B801003D1CCE /* DialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC295481828B801003D1CCE /* DialogView.m */; };
@@ -35,27 +72,25 @@
 		EAC295531828B801003D1CCE /* DownloadingAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC2954C1828B801003D1CCE /* DownloadingAlert.xib */; };
 		EAC295541828B801003D1CCE /* popupBg.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC2954D1828B801003D1CCE /* popupBg.png */; };
 		EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC2954E1828B801003D1CCE /* popupBg@2x.png */; };
-		EAC295591828BF93003D1CCE /* CreateDietViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC295581828BF93003D1CCE /* CreateDietViewController.m */; };
 		EAC2955C1828C626003D1CCE /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC2955A1828C626003D1CCE /* apple.png */; };
 		EAC2955D1828C626003D1CCE /* apple2.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC2955B1828C626003D1CCE /* apple2.png */; };
 		EAC2955F1828C6F9003D1CCE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2955E1828C6F9003D1CCE /* QuartzCore.framework */; };
-		EAC2956D1828F44F003D1CCE /* CreateDietNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC295671828F44F003D1CCE /* CreateDietNotifierView.m */; };
-		EAC2956E1828F44F003D1CCE /* CustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2956B1828F44F003D1CCE /* CustomAdView.m */; };
-		EAC2956F1828F44F003D1CCE /* CustomAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC2956C1828F44F003D1CCE /* CustomAdView.xib */; };
-		EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */; };
 		F85A2012182B72E1001AB9A6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2011182B72E1001AB9A6 /* CoreMotion.framework */; };
 		F85A2014182B72FE001AB9A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */; };
 		F85A2016182B7307001AB9A6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2015182B7307001AB9A6 /* AdSupport.framework */; };
 		F85A2018182B730F001AB9A6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2017182B730F001AB9A6 /* MediaPlayer.framework */; };
 		F85A201A182B7363001AB9A6 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2019182B7363001AB9A6 /* EventKit.framework */; };
 		F85A201C182B736A001AB9A6 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A201B182B736A001AB9A6 /* EventKitUI.framework */; };
-		F85A2025182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A201F182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib */; };
-		F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */; };
-		F85A2027182B7AA6001AB9A6 /* DietPlannerSimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */; };
-		F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4562C3861830C4F500A07540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4562C3611830C4F500A07540 /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
 		EA9ACA7118212E82003C9D12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EA9ACA4318212E82003C9D12 /* Project object */;
@@ -66,6 +101,82 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4562C2F81830C45500A07540 /* CellWithLeftImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellWithLeftImage.h; sourceTree = "<group>"; };
+		4562C2F91830C45500A07540 /* CellWithLeftImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellWithLeftImage.m; sourceTree = "<group>"; };
+		4562C2FA1830C45500A07540 /* CellWithLeftImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellWithLeftImage.xib; sourceTree = "<group>"; };
+		4562C2FC1830C45500A07540 /* DietPackageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPackageCell.h; sourceTree = "<group>"; };
+		4562C2FD1830C45500A07540 /* DietPackageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPackageCell.m; sourceTree = "<group>"; };
+		4562C2FE1830C45500A07540 /* DietPackageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPackageCell.xib; sourceTree = "<group>"; };
+		4562C3001830C45500A07540 /* DietPlannerSimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSimpleCell.h; sourceTree = "<group>"; };
+		4562C3011830C45500A07540 /* DietPlannerSimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSimpleCell.m; sourceTree = "<group>"; };
+		4562C3021830C45500A07540 /* DietPlannerSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSimpleCell.xib; sourceTree = "<group>"; };
+		4562C3031830C45500A07540 /* DietPlannerSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSpecialCell.h; sourceTree = "<group>"; };
+		4562C3041830C45500A07540 /* DietPlannerSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSpecialCell.m; sourceTree = "<group>"; };
+		4562C3051830C45500A07540 /* DietPlannerSpecialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSpecialCell.xib; sourceTree = "<group>"; };
+		4562C3071830C45500A07540 /* OwnDietCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnDietCustomCell.h; sourceTree = "<group>"; };
+		4562C3081830C45500A07540 /* OwnDietCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnDietCustomCell.m; sourceTree = "<group>"; };
+		4562C3091830C45500A07540 /* OwnDietCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OwnDietCustomCell.xib; sourceTree = "<group>"; };
+		4562C30B1830C45500A07540 /* ShoppingListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListCell.h; sourceTree = "<group>"; };
+		4562C30C1830C45500A07540 /* ShoppingListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListCell.m; sourceTree = "<group>"; };
+		4562C30D1830C45500A07540 /* ShoppingListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingListCell.xib; sourceTree = "<group>"; };
+		4562C31B1830C47700A07540 /* UnderLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderLineLabel.h; sourceTree = "<group>"; };
+		4562C31C1830C47700A07540 /* UnderLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderLineLabel.m; sourceTree = "<group>"; };
+		4562C3201830C4C900A07540 /* CreateDietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDietViewController.h; sourceTree = "<group>"; };
+		4562C3211830C4C900A07540 /* CreateDietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDietViewController.m; sourceTree = "<group>"; };
+		4562C3221830C4C900A07540 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		4562C3231830C4C900A07540 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		4562C3251830C4C900A07540 /* DietPackageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPackageTableViewController.h; sourceTree = "<group>"; };
+		4562C3261830C4C900A07540 /* DietPackageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPackageTableViewController.m; sourceTree = "<group>"; };
+		4562C3281830C4C900A07540 /* DietPackageBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPackageBuyViewController.h; sourceTree = "<group>"; };
+		4562C3291830C4C900A07540 /* DietPackageBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPackageBuyViewController.m; sourceTree = "<group>"; };
+		4562C32B1830C4C900A07540 /* DietPackageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPackageDetailViewController.h; sourceTree = "<group>"; };
+		4562C32C1830C4C900A07540 /* DietPackageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPackageDetailViewController.m; sourceTree = "<group>"; };
+		4562C32E1830C4C900A07540 /* DietPlannerCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerCalendarViewController.h; sourceTree = "<group>"; };
+		4562C32F1830C4C900A07540 /* DietPlannerCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerCalendarViewController.m; sourceTree = "<group>"; };
+		4562C3311830C4C900A07540 /* DietPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerViewController.h; sourceTree = "<group>"; };
+		4562C3321830C4C900A07540 /* DietPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerViewController.m; sourceTree = "<group>"; };
+		4562C3341830C4C900A07540 /* OwnDietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnDietViewController.h; sourceTree = "<group>"; };
+		4562C3351830C4C900A07540 /* OwnDietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnDietViewController.m; sourceTree = "<group>"; };
+		4562C3371830C4C900A07540 /* RecipeBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookViewController.h; sourceTree = "<group>"; };
+		4562C3381830C4C900A07540 /* RecipeBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookViewController.m; sourceTree = "<group>"; };
+		4562C33A1830C4C900A07540 /* ShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListViewController.h; sourceTree = "<group>"; };
+		4562C33B1830C4C900A07540 /* ShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListViewController.m; sourceTree = "<group>"; };
+		4562C3481830C4E700A07540 /* CreateDietNotifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDietNotifierView.h; sourceTree = "<group>"; };
+		4562C3491830C4E700A07540 /* CreateDietNotifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDietNotifierView.m; sourceTree = "<group>"; };
+		4562C34A1830C4E700A07540 /* CreateDietNotifierView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateDietNotifierView.xib; sourceTree = "<group>"; };
+		4562C34C1830C4E700A07540 /* CustomAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAdView.h; sourceTree = "<group>"; };
+		4562C34D1830C4E700A07540 /* CustomAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAdView.m; sourceTree = "<group>"; };
+		4562C34E1830C4E700A07540 /* CustomAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAdView.xib; sourceTree = "<group>"; };
+		4562C3501830C4E700A07540 /* FilterRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterRecipeCell.h; sourceTree = "<group>"; };
+		4562C3511830C4E700A07540 /* FilterRecipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterRecipeCell.m; sourceTree = "<group>"; };
+		4562C3531830C4E700A07540 /* ShoppingListNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListNotifier.h; sourceTree = "<group>"; };
+		4562C3541830C4E700A07540 /* ShoppingListNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListNotifier.m; sourceTree = "<group>"; };
+		4562C3551830C4E700A07540 /* ShoppingListNotifier.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingListNotifier.xib; sourceTree = "<group>"; };
+		4562C35F1830C4F500A07540 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
+		4562C3601830C4F500A07540 /* Kal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kal.h; sourceTree = "<group>"; };
+		4562C3611830C4F500A07540 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
+		4562C3641830C4F500A07540 /* Kal_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kal_Prefix.pch; sourceTree = "<group>"; };
+		4562C3651830C4F500A07540 /* KalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalDataSource.h; sourceTree = "<group>"; };
+		4562C3661830C4F500A07540 /* KalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalDataSource.m; sourceTree = "<group>"; };
+		4562C3671830C4F500A07540 /* KalDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalDate.h; sourceTree = "<group>"; };
+		4562C3681830C4F500A07540 /* KalDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalDate.m; sourceTree = "<group>"; };
+		4562C3691830C4F500A07540 /* KalGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalGridView.h; sourceTree = "<group>"; };
+		4562C36A1830C4F500A07540 /* KalGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalGridView.m; sourceTree = "<group>"; };
+		4562C36B1830C4F500A07540 /* KalLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalLogic.h; sourceTree = "<group>"; };
+		4562C36C1830C4F500A07540 /* KalLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalLogic.m; sourceTree = "<group>"; };
+		4562C36D1830C4F500A07540 /* KalMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalMonthView.h; sourceTree = "<group>"; };
+		4562C36E1830C4F500A07540 /* KalMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalMonthView.m; sourceTree = "<group>"; };
+		4562C36F1830C4F500A07540 /* KalPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalPrivate.h; sourceTree = "<group>"; };
+		4562C3701830C4F500A07540 /* KalTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalTileView.h; sourceTree = "<group>"; };
+		4562C3711830C4F500A07540 /* KalTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalTileView.m; sourceTree = "<group>"; };
+		4562C3721830C4F500A07540 /* KalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalView.h; sourceTree = "<group>"; };
+		4562C3731830C4F500A07540 /* KalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalView.m; sourceTree = "<group>"; };
+		4562C3741830C4F500A07540 /* KalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KalViewController.h; sourceTree = "<group>"; };
+		4562C3751830C4F500A07540 /* KalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KalViewController.m; sourceTree = "<group>"; };
+		4562C3761830C4F500A07540 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		4562C3771830C4F500A07540 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		4562C3781830C4F500A07540 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		4562C3791830C4F500A07540 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		45FECCF51830BB2E00F7D5F8 /* SASAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdView.h; sourceTree = "<group>"; };
 		45FECCF61830BB2E00F7D5F8 /* SASAdViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASAdViewDelegate.h; sourceTree = "<group>"; };
 		45FECCF71830BB2E00F7D5F8 /* SASBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASBannerView.h; sourceTree = "<group>"; };
@@ -77,10 +188,6 @@
 		45FECCFD1830BB2E00F7D5F8 /* sas.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sas.bundle; sourceTree = "<group>"; };
 		5C3C082F182BDF5A00347E44 /* StarRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarRatingControl.h; sourceTree = "<group>"; };
 		5C3C0830182BDF5A00347E44 /* StarRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarRatingControl.m; sourceTree = "<group>"; };
-		5C3C0833182BE3D000347E44 /* FilterRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterRecipeCell.h; sourceTree = "<group>"; };
-		5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterRecipeCell.m; sourceTree = "<group>"; };
-		5C49B464182BB2E4002BD406 /* RecipeBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeBookViewController.h; sourceTree = "<group>"; };
-		5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeBookViewController.m; sourceTree = "<group>"; };
 		EA9ACA4B18212E82003C9D12 /* SchlankFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchlankFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9ACA4E18212E82003C9D12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA9ACA5018212E82003C9D12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,10 +207,6 @@
 		EA9ACA7518212E82003C9D12 /* SchlankFitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SchlankFitTests-Info.plist"; sourceTree = "<group>"; };
 		EA9ACA7718212E82003C9D12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA9ACA7918212E82003C9D12 /* SchlankFitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchlankFitTests.m; sourceTree = "<group>"; };
-		EAC295381823FDE6003D1CCE /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
-		EAC295391823FDE6003D1CCE /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
-		EAC2953B1823FDE6003D1CCE /* DietPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerViewController.h; sourceTree = "<group>"; };
-		EAC2953C1823FDE6003D1CCE /* DietPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerViewController.m; sourceTree = "<group>"; };
 		EAC295411828B801003D1CCE /* MNMRemoteImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMRemoteImageView.h; sourceTree = "<group>"; };
 		EAC295421828B801003D1CCE /* MNMRemoteImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMRemoteImageView.m; sourceTree = "<group>"; };
 		EAC295441828B801003D1CCE /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
@@ -115,29 +218,15 @@
 		EAC2954C1828B801003D1CCE /* DownloadingAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadingAlert.xib; sourceTree = "<group>"; };
 		EAC2954D1828B801003D1CCE /* popupBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popupBg.png; sourceTree = "<group>"; };
 		EAC2954E1828B801003D1CCE /* popupBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popupBg@2x.png"; sourceTree = "<group>"; };
-		EAC295571828BF93003D1CCE /* CreateDietViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateDietViewController.h; path = SchlankFit/ViewControllers/DashboardViewController/CreateDietViewController/CreateDietViewController.h; sourceTree = SOURCE_ROOT; };
-		EAC295581828BF93003D1CCE /* CreateDietViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateDietViewController.m; path = SchlankFit/ViewControllers/DashboardViewController/CreateDietViewController/CreateDietViewController.m; sourceTree = SOURCE_ROOT; };
 		EAC2955A1828C626003D1CCE /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		EAC2955B1828C626003D1CCE /* apple2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple2.png; sourceTree = "<group>"; };
 		EAC2955E1828C6F9003D1CCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		EAC295661828F44F003D1CCE /* CreateDietNotifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDietNotifierView.h; sourceTree = "<group>"; };
-		EAC295671828F44F003D1CCE /* CreateDietNotifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDietNotifierView.m; sourceTree = "<group>"; };
-		EAC2956A1828F44F003D1CCE /* CustomAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAdView.h; sourceTree = "<group>"; };
-		EAC2956B1828F44F003D1CCE /* CustomAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAdView.m; sourceTree = "<group>"; };
-		EAC2956C1828F44F003D1CCE /* CustomAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAdView.xib; sourceTree = "<group>"; };
-		EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateDietNotifierView.xib; sourceTree = "<group>"; };
 		F85A2011182B72E1001AB9A6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F85A2013182B72FE001AB9A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F85A2015182B7307001AB9A6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F85A2017182B730F001AB9A6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F85A2019182B7363001AB9A6 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		F85A201B182B736A001AB9A6 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		F85A201F182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSpecialCell.xib; sourceTree = "<group>"; };
-		F85A2020182B7AA6001AB9A6 /* DietPlannerSpecialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSpecialCell.h; sourceTree = "<group>"; };
-		F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSpecialCell.m; sourceTree = "<group>"; };
-		F85A2022182B7AA6001AB9A6 /* DietPlannerSimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DietPlannerSimpleCell.h; sourceTree = "<group>"; };
-		F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DietPlannerSimpleCell.m; sourceTree = "<group>"; };
-		F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DietPlannerSimpleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +261,270 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4562C2F71830C45500A07540 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				4562C2F81830C45500A07540 /* CellWithLeftImage.h */,
+				4562C2F91830C45500A07540 /* CellWithLeftImage.m */,
+				4562C2FA1830C45500A07540 /* CellWithLeftImage.xib */,
+				4562C2FB1830C45500A07540 /* DietPackage */,
+				4562C2FF1830C45500A07540 /* DietPlanner */,
+				4562C3061830C45500A07540 /* OwnDiet */,
+				4562C30A1830C45500A07540 /* ShoppingList */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		4562C2FB1830C45500A07540 /* DietPackage */ = {
+			isa = PBXGroup;
+			children = (
+				4562C2FC1830C45500A07540 /* DietPackageCell.h */,
+				4562C2FD1830C45500A07540 /* DietPackageCell.m */,
+				4562C2FE1830C45500A07540 /* DietPackageCell.xib */,
+			);
+			path = DietPackage;
+			sourceTree = "<group>";
+		};
+		4562C2FF1830C45500A07540 /* DietPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3001830C45500A07540 /* DietPlannerSimpleCell.h */,
+				4562C3011830C45500A07540 /* DietPlannerSimpleCell.m */,
+				4562C3021830C45500A07540 /* DietPlannerSimpleCell.xib */,
+				4562C3031830C45500A07540 /* DietPlannerSpecialCell.h */,
+				4562C3041830C45500A07540 /* DietPlannerSpecialCell.m */,
+				4562C3051830C45500A07540 /* DietPlannerSpecialCell.xib */,
+			);
+			path = DietPlanner;
+			sourceTree = "<group>";
+		};
+		4562C3061830C45500A07540 /* OwnDiet */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3071830C45500A07540 /* OwnDietCustomCell.h */,
+				4562C3081830C45500A07540 /* OwnDietCustomCell.m */,
+				4562C3091830C45500A07540 /* OwnDietCustomCell.xib */,
+			);
+			path = OwnDiet;
+			sourceTree = "<group>";
+		};
+		4562C30A1830C45500A07540 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				4562C30B1830C45500A07540 /* ShoppingListCell.h */,
+				4562C30C1830C45500A07540 /* ShoppingListCell.m */,
+				4562C30D1830C45500A07540 /* ShoppingListCell.xib */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		4562C31A1830C47700A07540 /* UnderLineLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4562C31B1830C47700A07540 /* UnderLineLabel.h */,
+				4562C31C1830C47700A07540 /* UnderLineLabel.m */,
+			);
+			path = UnderLineLabel;
+			sourceTree = "<group>";
+		};
+		4562C31E1830C4C900A07540 /* DashboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4562C31F1830C4C900A07540 /* CreateDietViewController */,
+				4562C3221830C4C900A07540 /* DashboardViewController.h */,
+				4562C3231830C4C900A07540 /* DashboardViewController.m */,
+				4562C3241830C4C900A07540 /* DietPackage */,
+				4562C3271830C4C900A07540 /* DietPackageBuy */,
+				4562C32A1830C4C900A07540 /* DietPackageDetail */,
+				4562C32D1830C4C900A07540 /* DietPlannerCalendar */,
+				4562C3301830C4C900A07540 /* DietPlanners */,
+				4562C3331830C4C900A07540 /* OwnDiet */,
+				4562C3361830C4C900A07540 /* RecipeBookViewController */,
+				4562C3391830C4C900A07540 /* ShoppingList */,
+			);
+			name = DashboardViewController;
+			path = ViewControllers/DashboardViewController;
+			sourceTree = "<group>";
+		};
+		4562C31F1830C4C900A07540 /* CreateDietViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3201830C4C900A07540 /* CreateDietViewController.h */,
+				4562C3211830C4C900A07540 /* CreateDietViewController.m */,
+			);
+			path = CreateDietViewController;
+			sourceTree = "<group>";
+		};
+		4562C3241830C4C900A07540 /* DietPackage */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3251830C4C900A07540 /* DietPackageTableViewController.h */,
+				4562C3261830C4C900A07540 /* DietPackageTableViewController.m */,
+			);
+			path = DietPackage;
+			sourceTree = "<group>";
+		};
+		4562C3271830C4C900A07540 /* DietPackageBuy */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3281830C4C900A07540 /* DietPackageBuyViewController.h */,
+				4562C3291830C4C900A07540 /* DietPackageBuyViewController.m */,
+			);
+			path = DietPackageBuy;
+			sourceTree = "<group>";
+		};
+		4562C32A1830C4C900A07540 /* DietPackageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4562C32B1830C4C900A07540 /* DietPackageDetailViewController.h */,
+				4562C32C1830C4C900A07540 /* DietPackageDetailViewController.m */,
+			);
+			path = DietPackageDetail;
+			sourceTree = "<group>";
+		};
+		4562C32D1830C4C900A07540 /* DietPlannerCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				4562C32E1830C4C900A07540 /* DietPlannerCalendarViewController.h */,
+				4562C32F1830C4C900A07540 /* DietPlannerCalendarViewController.m */,
+			);
+			path = DietPlannerCalendar;
+			sourceTree = "<group>";
+		};
+		4562C3301830C4C900A07540 /* DietPlanners */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3311830C4C900A07540 /* DietPlannerViewController.h */,
+				4562C3321830C4C900A07540 /* DietPlannerViewController.m */,
+			);
+			path = DietPlanners;
+			sourceTree = "<group>";
+		};
+		4562C3331830C4C900A07540 /* OwnDiet */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3341830C4C900A07540 /* OwnDietViewController.h */,
+				4562C3351830C4C900A07540 /* OwnDietViewController.m */,
+			);
+			path = OwnDiet;
+			sourceTree = "<group>";
+		};
+		4562C3361830C4C900A07540 /* RecipeBookViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3371830C4C900A07540 /* RecipeBookViewController.h */,
+				4562C3381830C4C900A07540 /* RecipeBookViewController.m */,
+			);
+			path = RecipeBookViewController;
+			sourceTree = "<group>";
+		};
+		4562C3391830C4C900A07540 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				4562C33A1830C4C900A07540 /* ShoppingListViewController.h */,
+				4562C33B1830C4C900A07540 /* ShoppingListViewController.m */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		4562C3461830C4E700A07540 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3471830C4E700A07540 /* CreateDietNotifierView */,
+				4562C34B1830C4E700A07540 /* CustomAdView */,
+				4562C34F1830C4E700A07540 /* FilterCell */,
+				4562C3521830C4E700A07540 /* ShoppingListNotifierView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4562C3471830C4E700A07540 /* CreateDietNotifierView */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3481830C4E700A07540 /* CreateDietNotifierView.h */,
+				4562C3491830C4E700A07540 /* CreateDietNotifierView.m */,
+				4562C34A1830C4E700A07540 /* CreateDietNotifierView.xib */,
+			);
+			path = CreateDietNotifierView;
+			sourceTree = "<group>";
+		};
+		4562C34B1830C4E700A07540 /* CustomAdView */ = {
+			isa = PBXGroup;
+			children = (
+				4562C34C1830C4E700A07540 /* CustomAdView.h */,
+				4562C34D1830C4E700A07540 /* CustomAdView.m */,
+				4562C34E1830C4E700A07540 /* CustomAdView.xib */,
+			);
+			path = CustomAdView;
+			sourceTree = "<group>";
+		};
+		4562C34F1830C4E700A07540 /* FilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3501830C4E700A07540 /* FilterRecipeCell.h */,
+				4562C3511830C4E700A07540 /* FilterRecipeCell.m */,
+			);
+			path = FilterCell;
+			sourceTree = "<group>";
+		};
+		4562C3521830C4E700A07540 /* ShoppingListNotifierView */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3531830C4E700A07540 /* ShoppingListNotifier.h */,
+				4562C3541830C4E700A07540 /* ShoppingListNotifier.m */,
+				4562C3551830C4E700A07540 /* ShoppingListNotifier.xib */,
+			);
+			path = ShoppingListNotifierView;
+			sourceTree = "<group>";
+		};
+		4562C35D1830C4F500A07540 /* KalCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				4562C35E1830C4F500A07540 /* src */,
+			);
+			path = KalCalendar;
+			sourceTree = "<group>";
+		};
+		4562C35E1830C4F500A07540 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4562C35F1830C4F500A07540 /* Kal.bundle */,
+				4562C3601830C4F500A07540 /* Kal.h */,
+				4562C3611830C4F500A07540 /* Kal.xcodeproj */,
+				4562C3641830C4F500A07540 /* Kal_Prefix.pch */,
+				4562C3651830C4F500A07540 /* KalDataSource.h */,
+				4562C3661830C4F500A07540 /* KalDataSource.m */,
+				4562C3671830C4F500A07540 /* KalDate.h */,
+				4562C3681830C4F500A07540 /* KalDate.m */,
+				4562C3691830C4F500A07540 /* KalGridView.h */,
+				4562C36A1830C4F500A07540 /* KalGridView.m */,
+				4562C36B1830C4F500A07540 /* KalLogic.h */,
+				4562C36C1830C4F500A07540 /* KalLogic.m */,
+				4562C36D1830C4F500A07540 /* KalMonthView.h */,
+				4562C36E1830C4F500A07540 /* KalMonthView.m */,
+				4562C36F1830C4F500A07540 /* KalPrivate.h */,
+				4562C3701830C4F500A07540 /* KalTileView.h */,
+				4562C3711830C4F500A07540 /* KalTileView.m */,
+				4562C3721830C4F500A07540 /* KalView.h */,
+				4562C3731830C4F500A07540 /* KalView.m */,
+				4562C3741830C4F500A07540 /* KalViewController.h */,
+				4562C3751830C4F500A07540 /* KalViewController.m */,
+				4562C3761830C4F500A07540 /* NSDateAdditions.h */,
+				4562C3771830C4F500A07540 /* NSDateAdditions.m */,
+				4562C3781830C4F500A07540 /* UIViewAdditions.h */,
+				4562C3791830C4F500A07540 /* UIViewAdditions.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4562C3621830C4F500A07540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4562C3871830C4F500A07540 /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		45FECCF31830BB2E00F7D5F8 /* SmartAd */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,25 +556,6 @@
 				5C3C0830182BDF5A00347E44 /* StarRatingControl.m */,
 			);
 			path = StarRatingControl;
-			sourceTree = "<group>";
-		};
-		5C3C0832182BE3AF00347E44 /* FilterCell */ = {
-			isa = PBXGroup;
-			children = (
-				5C3C0833182BE3D000347E44 /* FilterRecipeCell.h */,
-				5C3C0834182BE3D000347E44 /* FilterRecipeCell.m */,
-			);
-			name = FilterCell;
-			path = CustomViews/FilterCell;
-			sourceTree = "<group>";
-		};
-		5C49B463182BB2E4002BD406 /* RecipeBookViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5C49B464182BB2E4002BD406 /* RecipeBookViewController.h */,
-				5C49B465182BB2E4002BD406 /* RecipeBookViewController.m */,
-			);
-			path = RecipeBookViewController;
 			sourceTree = "<group>";
 		};
 		EA9ACA4218212E82003C9D12 = {
@@ -265,8 +599,8 @@
 		EA9ACA5418212E82003C9D12 /* SchlankFit */ = {
 			isa = PBXGroup;
 			children = (
-				F85A201E182B7A67001AB9A6 /* CustomCells */,
-				EAC295641828F44F003D1CCE /* CustomViews */,
+				4562C3461830C4E700A07540 /* CustomViews */,
+				4562C2F71830C45500A07540 /* CustomCells */,
 				EA9ACA8318212EB9003C9D12 /* ViewControllers */,
 				EA9ACA5D18212E82003C9D12 /* AppDelegate.h */,
 				EA9ACA5E18212E82003C9D12 /* AppDelegate.m */,
@@ -311,36 +645,16 @@
 		EA9ACA8318212EB9003C9D12 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EAC295371823FDE6003D1CCE /* DashboardViewController */,
+				4562C31E1830C4C900A07540 /* DashboardViewController */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		EAC295371823FDE6003D1CCE /* DashboardViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5C49B463182BB2E4002BD406 /* RecipeBookViewController */,
-				EAC295381823FDE6003D1CCE /* DashboardViewController.h */,
-				EAC295391823FDE6003D1CCE /* DashboardViewController.m */,
-				EAC2953A1823FDE6003D1CCE /* DietPlanners */,
-				EAC295561828BF4C003D1CCE /* CreateDiet */,
-			);
-			name = DashboardViewController;
-			path = ViewControllers/DashboardViewController;
-			sourceTree = "<group>";
-		};
-		EAC2953A1823FDE6003D1CCE /* DietPlanners */ = {
-			isa = PBXGroup;
-			children = (
-				EAC2953B1823FDE6003D1CCE /* DietPlannerViewController.h */,
-				EAC2953C1823FDE6003D1CCE /* DietPlannerViewController.m */,
-			);
-			path = DietPlanners;
 			sourceTree = "<group>";
 		};
 		EAC2953F1828B801003D1CCE /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				4562C35D1830C4F500A07540 /* KalCalendar */,
+				4562C31A1830C47700A07540 /* UnderLineLabel */,
 				45FECCF31830BB2E00F7D5F8 /* SmartAd */,
 				5C3C082E182BDF5A00347E44 /* StarRatingControl */,
 				EAC295401828B801003D1CCE /* MNMRemoteImageView */,
@@ -390,68 +704,6 @@
 				EAC2954E1828B801003D1CCE /* popupBg@2x.png */,
 			);
 			path = DownloadingAlert;
-			sourceTree = "<group>";
-		};
-		EAC295561828BF4C003D1CCE /* CreateDiet */ = {
-			isa = PBXGroup;
-			children = (
-				EAC295571828BF93003D1CCE /* CreateDietViewController.h */,
-				EAC295581828BF93003D1CCE /* CreateDietViewController.m */,
-			);
-			name = CreateDiet;
-			path = DietPlanners;
-			sourceTree = "<group>";
-		};
-		EAC295641828F44F003D1CCE /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				EAC295651828F44F003D1CCE /* CreateDietNotifierView */,
-				EAC295681828F44F003D1CCE /* CustomAdView */,
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
-		EAC295651828F44F003D1CCE /* CreateDietNotifierView */ = {
-			isa = PBXGroup;
-			children = (
-				EAC295661828F44F003D1CCE /* CreateDietNotifierView.h */,
-				EAC295671828F44F003D1CCE /* CreateDietNotifierView.m */,
-				EAC295701828F46B003D1CCE /* CreateDietNotifierView.xib */,
-			);
-			path = CreateDietNotifierView;
-			sourceTree = "<group>";
-		};
-		EAC295681828F44F003D1CCE /* CustomAdView */ = {
-			isa = PBXGroup;
-			children = (
-				EAC2956A1828F44F003D1CCE /* CustomAdView.h */,
-				EAC2956B1828F44F003D1CCE /* CustomAdView.m */,
-				EAC2956C1828F44F003D1CCE /* CustomAdView.xib */,
-			);
-			path = CustomAdView;
-			sourceTree = "<group>";
-		};
-		F85A201D182B7A31001AB9A6 /* DietPlanner */ = {
-			isa = PBXGroup;
-			children = (
-				F85A201F182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib */,
-				F85A2020182B7AA6001AB9A6 /* DietPlannerSpecialCell.h */,
-				F85A2021182B7AA6001AB9A6 /* DietPlannerSpecialCell.m */,
-				F85A2022182B7AA6001AB9A6 /* DietPlannerSimpleCell.h */,
-				F85A2023182B7AA6001AB9A6 /* DietPlannerSimpleCell.m */,
-				F85A2024182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib */,
-			);
-			name = DietPlanner;
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
-		F85A201E182B7A67001AB9A6 /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-				5C3C0832182BE3AF00347E44 /* FilterCell */,
-				F85A201D182B7A31001AB9A6 /* DietPlanner */,
-			);
-			name = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +769,12 @@
 			mainGroup = EA9ACA4218212E82003C9D12;
 			productRefGroup = EA9ACA4C18212E82003C9D12 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4562C3621830C4F500A07540 /* Products */;
+					ProjectRef = 4562C3611830C4F500A07540 /* Kal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EA9ACA4A18212E82003C9D12 /* SchlankFit */,
@@ -525,21 +783,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4562C3871830C4F500A07540 /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = 4562C3861830C4F500A07540 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		EA9ACA4918212E82003C9D12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4562C3571830C4E700A07540 /* CreateDietNotifierView.xib in Resources */,
 				EAC2955D1828C626003D1CCE /* apple2.png in Resources */,
-				F85A2028182B7AA6001AB9A6 /* DietPlannerSimpleCell.xib in Resources */,
 				EAC295551828B801003D1CCE /* popupBg@2x.png in Resources */,
+				4562C37A1830C4F500A07540 /* Kal.bundle in Resources */,
+				4562C3151830C45500A07540 /* DietPlannerSpecialCell.xib in Resources */,
 				45FECCFF1830BB2E00F7D5F8 /* sas.bundle in Resources */,
+				4562C3111830C45500A07540 /* DietPackageCell.xib in Resources */,
 				EA9ACA6718212E82003C9D12 /* Images.xcassets in Resources */,
+				4562C30F1830C45500A07540 /* CellWithLeftImage.xib in Resources */,
 				EAC295541828B801003D1CCE /* popupBg.png in Resources */,
-				EAC295711828F46B003D1CCE /* CreateDietNotifierView.xib in Resources */,
-				F85A2025182B7AA6001AB9A6 /* DietPlannerSpecialCell.xib in Resources */,
+				4562C35C1830C4E700A07540 /* ShoppingListNotifier.xib in Resources */,
+				4562C3131830C45500A07540 /* DietPlannerSimpleCell.xib in Resources */,
+				4562C3191830C45500A07540 /* ShoppingListCell.xib in Resources */,
 				EAC295531828B801003D1CCE /* DownloadingAlert.xib in Resources */,
-				EAC2956F1828F44F003D1CCE /* CustomAdView.xib in Resources */,
+				4562C3171830C45500A07540 /* OwnDietCustomCell.xib in Resources */,
+				4562C3591830C4E700A07540 /* CustomAdView.xib in Resources */,
 				EA9ACA5918212E82003C9D12 /* InfoPlist.strings in Resources */,
 				EAC2955C1828C626003D1CCE /* apple.png in Resources */,
 				EA9ACA6218212E82003C9D12 /* Main.storyboard in Resources */,
@@ -561,23 +835,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4562C33E1830C4C900A07540 /* DietPackageTableViewController.m in Sources */,
+				4562C37D1830C4F500A07540 /* KalGridView.m in Sources */,
+				4562C3141830C45500A07540 /* DietPlannerSpecialCell.m in Sources */,
 				EA9ACA6518212E82003C9D12 /* SplashViewController.m in Sources */,
+				4562C33D1830C4C900A07540 /* DashboardViewController.m in Sources */,
+				4562C3401830C4C900A07540 /* DietPackageDetailViewController.m in Sources */,
+				4562C33C1830C4C900A07540 /* CreateDietViewController.m in Sources */,
+				4562C3451830C4C900A07540 /* ShoppingListViewController.m in Sources */,
+				4562C3121830C45500A07540 /* DietPlannerSimpleCell.m in Sources */,
+				4562C3801830C4F500A07540 /* KalTileView.m in Sources */,
+				4562C30E1830C45500A07540 /* CellWithLeftImage.m in Sources */,
+				4562C3811830C4F500A07540 /* KalView.m in Sources */,
+				4562C3431830C4C900A07540 /* OwnDietViewController.m in Sources */,
+				4562C33F1830C4C900A07540 /* DietPackageBuyViewController.m in Sources */,
+				4562C35A1830C4E700A07540 /* FilterRecipeCell.m in Sources */,
 				EA9ACA5F18212E82003C9D12 /* AppDelegate.m in Sources */,
-				F85A2027182B7AA6001AB9A6 /* DietPlannerSimpleCell.m in Sources */,
+				4562C3561830C4E700A07540 /* CreateDietNotifierView.m in Sources */,
 				EAC295511828B801003D1CCE /* DialogView.m in Sources */,
+				4562C3421830C4C900A07540 /* DietPlannerViewController.m in Sources */,
+				4562C35B1830C4E700A07540 /* ShoppingListNotifier.m in Sources */,
 				EAC295501828B801003D1CCE /* NIDropDown.m in Sources */,
-				EAC2953E1823FDE6003D1CCE /* DietPlannerViewController.m in Sources */,
-				5C49B466182BB2E4002BD406 /* RecipeBookViewController.m in Sources */,
-				5C3C0835182BE3D100347E44 /* FilterRecipeCell.m in Sources */,
+				4562C31D1830C47700A07540 /* UnderLineLabel.m in Sources */,
+				4562C37F1830C4F500A07540 /* KalMonthView.m in Sources */,
+				4562C3581830C4E700A07540 /* CustomAdView.m in Sources */,
+				4562C3831830C4F500A07540 /* NSDateAdditions.m in Sources */,
+				4562C3441830C4C900A07540 /* RecipeBookViewController.m in Sources */,
+				4562C3411830C4C900A07540 /* DietPlannerCalendarViewController.m in Sources */,
 				EAC2954F1828B801003D1CCE /* MNMRemoteImageView.m in Sources */,
-				EAC295591828BF93003D1CCE /* CreateDietViewController.m in Sources */,
+				4562C37E1830C4F500A07540 /* KalLogic.m in Sources */,
+				4562C37B1830C4F500A07540 /* KalDataSource.m in Sources */,
+				4562C3161830C45500A07540 /* OwnDietCustomCell.m in Sources */,
+				4562C37C1830C4F500A07540 /* KalDate.m in Sources */,
+				4562C3821830C4F500A07540 /* KalViewController.m in Sources */,
 				EAC295521828B801003D1CCE /* DownloadingAlert.m in Sources */,
-				EAC2956E1828F44F003D1CCE /* CustomAdView.m in Sources */,
-				EAC2953D1823FDE6003D1CCE /* DashboardViewController.m in Sources */,
 				EA9ACA5B18212E82003C9D12 /* main.m in Sources */,
-				EAC2956D1828F44F003D1CCE /* CreateDietNotifierView.m in Sources */,
+				4562C3841830C4F500A07540 /* UIViewAdditions.m in Sources */,
+				4562C3181830C45500A07540 /* ShoppingListCell.m in Sources */,
+				4562C3101830C45500A07540 /* DietPackageCell.m in Sources */,
 				5C3C0831182BDF5A00347E44 /* StarRatingControl.m in Sources */,
-				F85A2026182B7AA6001AB9A6 /* DietPlannerSpecialCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
