@@ -10,7 +10,7 @@
 #import "NIDropDown.h"
 #import "DropDownController.h"
 
-@interface ShoppingListViewController : UIViewController<UITextFieldDelegate,DropDownDelegate,NIDropDownDelegate>{
+@interface ShoppingListViewController : UIViewController<UITextFieldDelegate,DropDownDelegate>{
     NIDropDown *dropDown;
     DropDownController *dropDownPicker;
 }

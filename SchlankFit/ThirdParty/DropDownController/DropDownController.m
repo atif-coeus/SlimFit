@@ -37,7 +37,7 @@
 		}
 //		[save what ever]	
     }
-	[self dealloc];
+//	[self dealloc];
 //	[self performSelector:@selector(dealloc) withObject:nil afterDelay:5.4];
 }
 
@@ -105,7 +105,7 @@
 - (void)dealloc
 {
     NSLog(@"%s",__PRETTY_FUNCTION__);
-    [super dealloc];
+//    [super dealloc];
 }
 
 #pragma mark Picker Data Source Delegate Methods
