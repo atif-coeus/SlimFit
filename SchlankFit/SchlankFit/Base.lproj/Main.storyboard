@@ -209,11 +209,12 @@
                     <navigationItem key="navigationItem" title="Schlank &amp; Fit" id="OnW-4t-Y5c"/>
                     <connections>
                         <segue destination="Hcg-fc-xjM" kind="push" identifier="MainProfile" id="aEB-zZ-s9P"/>
+                        <segue destination="uTn-5o-SBS" kind="push" identifier="MyCookingBook" id="nZa-7q-k8n"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWm-vS-7Vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="7"/>
+            <point key="canvasLocation" x="428" y="7"/>
         </scene>
         <!--Main Profile View Controller - Mein Profil-->
         <scene sceneID="Rky-F3-Dxk">
@@ -246,14 +247,88 @@ gewicht</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mein Profil" id="TQQ-RA-gW1"/>
+                    <navigationItem key="navigationItem" title="Mein Profil" id="TQQ-RA-gW1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="0dl-M9-Osa"/>
+                        <barButtonItem key="rightBarButtonItem" id="dSO-wg-GRS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0xp-bv-7Pc">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <state key="normal" title="Neuer Eintrag"/>
+                                <connections>
+                                    <segue destination="1WB-sr-pQh" kind="push" id="U4Y-te-BUM"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="Segment" destination="chQ-Ur-Dvg" id="XnU-SK-POp"/>
+                        <outlet property="newEntry" destination="dSO-wg-GRS" id="w7m-nf-5pW"/>
+                        <outlet property="segment" destination="chQ-Ur-Dvg" id="obV-Tb-XVE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rrI-w6-qRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715" y="7"/>
+            <point key="canvasLocation" x="971" y="-373"/>
+        </scene>
+        <!--New Entry View Controller - Mein Profil-->
+        <scene sceneID="dkT-Rw-4fA">
+            <objects>
+                <viewController id="1WB-sr-pQh" customClass="WHNewEntryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7JM-mz-ya2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PyH-bX-378">
+                                <rect key="frame" x="72" y="20" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aktuelles Gewicht" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fiX-yi-vqw">
+                                <rect key="frame" x="72" y="118" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="saD-np-nHg">
+                                <rect key="frame" x="98" y="147" width="105" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1WB-sr-pQh" id="fZT-XC-UI6"/>
+                                    <outlet property="delegate" destination="1WB-sr-pQh" id="tNC-05-Ni4"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hEa-f4-5Js">
+                                <rect key="frame" x="81" y="49" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="22.11.2013">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDatePicker:" destination="1WB-sr-pQh" eventType="touchUpInside" id="UXe-I5-YqO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k53-OZ-YnB">
+                                <rect key="frame" x="81" y="317" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eintragen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addEntry:" destination="1WB-sr-pQh" eventType="touchUpInside" id="kcu-uF-vza"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mein Profil" id="hBT-wI-YK8">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="g54-Vb-Aoa"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlI-4b-F0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="-373"/>
         </scene>
         <!--Recipe Book View Controller - Rezeptbuch-->
         <scene sceneID="7Pg-BU-dUi">
@@ -554,7 +629,7 @@ gewicht</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTF-dZ-qbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="-1829"/>
+            <point key="canvasLocation" x="328" y="-2105"/>
         </scene>
         <!--Diet Planner View Controller - Diatplaner-->
         <scene sceneID="hob-Sf-s9F">
@@ -577,10 +652,13 @@ gewicht</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="qcJ-kN-aPK" kind="push" identifier="dietPackages" id="A8N-zM-QIb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwk-nQ-fKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="-1069"/>
+            <point key="canvasLocation" x="-212" y="-1541"/>
         </scene>
         <!--Diet Planner Calendar View Controller - Eigene Diät-->
         <scene sceneID="5Ni-sY-09I">
@@ -625,7 +703,7 @@ gewicht</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6h-nd-ebO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="-1829"/>
+            <point key="canvasLocation" x="839" y="-2105"/>
         </scene>
         <!--Own Diet View Controller - Tag 5-->
         <scene sceneID="GQE-oJ-Zlt">
@@ -660,7 +738,6 @@ gewicht</string>
                                 </state>
                                 <connections>
                                     <action selector="entireDatButtonAction:" destination="bj2-cU-Hxi" eventType="touchUpInside" id="seB-An-IlX"/>
-                                    <segue destination="qcJ-kN-aPK" kind="push" id="5FH-7w-Wje"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -676,7 +753,7 @@ gewicht</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEU-Ce-FjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="-1829"/>
+            <point key="canvasLocation" x="1360" y="-2105"/>
         </scene>
         <!--Diet Package Table View Controller - Diätpakete-->
         <scene sceneID="UmB-GK-6cZ">
@@ -713,7 +790,7 @@ gewicht</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qo-6E-hxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840" y="-1829"/>
+            <point key="canvasLocation" x="1768" y="-1541"/>
         </scene>
         <!--Diet Package Buy View Controller - [Diet Package 1] kaufen-->
         <scene sceneID="K20-Lo-sjI">
@@ -808,7 +885,7 @@ einen Gutscheincode eingeben.</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="0Pc-dE-asW"/>
-                                    <barButtonItem title="Item" id="HDd-68-64a"/>
+                                    <barButtonItem title="Share" id="HDd-68-64a"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -828,6 +905,90 @@ einen Gutscheincode eingeben.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qa-A8-35N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="238" y="763"/>
+        </scene>
+        <!--My Cooking Book View Controller - Mein Kochbuch-->
+        <scene sceneID="BIb-gJ-qa8">
+            <objects>
+                <viewController id="uTn-5o-SBS" customClass="MyCookingBookViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5V-6B-7yR">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tbY-jC-aYa">
+                                <rect key="frame" x="34" y="20" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Sortiert nach: Name (alphabetisch)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ztp-Db-OiG">
+                                <rect key="frame" x="0.0" y="58" width="320" height="446"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uTn-5o-SBS" id="g0l-NO-IsT"/>
+                                    <outlet property="delegate" destination="uTn-5o-SBS" id="M2u-BM-psy"/>
+                                </connections>
+                            </tableView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="kJY-QY-mSW">
+                                <rect key="frame" x="20" y="12" width="280" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oZ2-87-pOe">
+                                        <rect key="frame" x="8" y="0.0" width="261" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Um Rezepte zu Ihrem persönlichen Kochbuch
+hinzuzufügen, rufen Sie die Rezepte aus und
+fügen Sie sie mit ♥ hinzu.
+Die Rezepte in dieser Kategorie sind auch
+offline verfügbar.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar hidden="YES" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fHo-tR-Lw6">
+                                <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="18" style="plain" systemItem="fixedSpace" id="Xci-rE-Zla"/>
+                                    <barButtonItem title="Aus meinem Kochbuch entfernen" id="te4-rk-miq">
+                                        <connections>
+                                            <action selector="deleteRows:" destination="uTn-5o-SBS" id="UpB-js-CfU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="18" style="plain" systemItem="fixedSpace" id="HzE-vt-5Yx"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mein Kochbuch" id="6YW-P4-iVZ">
+                        <barButtonItem key="rightBarButtonItem" id="mrh-Vj-hAN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BUo-S7-yIx">
+                                <rect key="frame" x="234" y="7" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Bearbeiten">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editButton:" destination="uTn-5o-SBS" eventType="touchUpInside" id="QgS-Hz-l4U"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alertView" destination="kJY-QY-mSW" id="56b-Io-Ydf"/>
+                        <outlet property="tableView" destination="Ztp-Db-OiG" id="AkW-Z8-DDx"/>
+                        <outlet property="toolBar" destination="fHo-tR-Lw6" id="4ub-h5-JFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwD-HK-BYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="343"/>
         </scene>
     </scenes>
     <resources>

@@ -18,7 +18,7 @@
 @property (nonatomic,weak) IBOutlet UITextField *itemAmount;
 @property (nonatomic,weak) IBOutlet UIButton *itemUnit;
 @property (nonatomic,weak) IBOutlet UITextField *itemName;
-- (IBAction)showUnits:(id)sender;
+//- (IBAction)showUnits:(id)sender;
 
 @property (nonatomic,weak) IBOutlet UIView *editView;
 

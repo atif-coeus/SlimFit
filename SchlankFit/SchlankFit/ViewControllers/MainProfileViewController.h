@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MainProfileViewController : UIViewController{
-    IBOutlet UISegmentedControl *Segment;
+    IBOutlet UISegmentedControl *segment;
+    IBOutlet UIBarButtonItem *newEntry;
 }
 - (IBAction)tabChanged:(id)sender;
+//@property (weak, nonatomic) IBOutlet UIBarButtonItem *newEntry;
 
 @end

@@ -107,5 +107,14 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 2 && userDiet) {
+        [self performSegueWithIdentifier:@"dietPackages" sender:nil];
+    } else if(indexPath.row == 1 && !userDiet) {
+        [self performSegueWithIdentifier:@"dietPackages" sender:nil];
+    }
+}
+
 
 @end

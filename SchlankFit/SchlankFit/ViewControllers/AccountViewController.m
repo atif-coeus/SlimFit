@@ -71,6 +71,9 @@
     if (indexPath.row == 0) {
         [self performSegueWithIdentifier:@"MainProfile" sender:nil];
     }
+    if(indexPath.row == 1){
+        [self performSegueWithIdentifier:@"MyCookingBook" sender:nil];
+    }
 }
 
 #pragma mark - Navigation
