@@ -16,7 +16,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        NSArray *arr = [NSArray arrayWithObjects:@"38 kg",@"39 kg",@"40 kg",@"41 kg",@"42 kg",@"43 kg",@"44 kg",@"45 kg",@"46 kg",@"47 kg",nil];
+//        NSArray *arr = [NSArray arrayWithObjects:@"38 kg",@"39 kg",@"40 kg",@"41 kg",@"42 kg",@"43 kg",@"44 kg",@"45 kg",@"46 kg",@"47 kg",nil];
         
         [self.weightPicker selectRow:4 inComponent:0 animated:YES];
     }

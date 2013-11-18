@@ -885,7 +885,7 @@ einen Gutscheincode eingeben.</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="0Pc-dE-asW"/>
-                                    <barButtonItem title="Item" id="HDd-68-64a"/>
+                                    <barButtonItem title="Share" id="HDd-68-64a"/>
                                 </items>
                             </toolbar>
                         </subviews>

@@ -92,7 +92,7 @@ const NSString *timeKey = @"time";
 
 -(void) imageButtonPressed:(UIButton*)btn{
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:btn.tag-1 inSection:0];
-    MyCookingBookCell *cell = (MyCookingBookCell*)[self.tableView cellForRowAtIndexPath:indexPath];
+//    MyCookingBookCell *cell = (MyCookingBookCell*)[self.tableView cellForRowAtIndexPath:indexPath];
     
     NSDictionary *dict = @{@"index":[NSNumber numberWithInt:indexPath.row]};
     NSLog(@"%i", btn.tag-1);
@@ -167,6 +167,20 @@ const NSString *timeKey = @"time";
     [tableView reloadData];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleNone;
+}
+
+- (BOOL)tableView:(UITableView *)tableview shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+
+
+
 - (IBAction)editButton:(id)sender {
     UIButton *button;
     if ([sender isKindOfClass:[UIButton class]]) {
@@ -178,7 +192,7 @@ const NSString *timeKey = @"time";
         [self.tableView reloadData];
         [button setTitle:@"Abbrechen" forState:UIControlStateNormal];
         [self.toolBar setHidden:NO];
-        
+        [self.tableView setEditing:YES];
     }
     else
     {
@@ -186,6 +200,7 @@ const NSString *timeKey = @"time";
         [button setTitle:@"Bearbeiten" forState:UIControlStateNormal];
         [self.tableView reloadData];
         [self.toolBar setHidden:YES];
+        [self.tableView setEditing:NO];
     }
 }
 

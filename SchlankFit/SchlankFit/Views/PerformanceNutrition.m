@@ -20,6 +20,18 @@
     return self;
 }
 
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        
+//        UIPickerView *pickerView=[[UIPickerView alloc] initWithFrame:CGRectMake((320/2)-50, 200, 100, 180)];
+//        [pickerView setDelegate:self];
+//        [self addSubview:pickerView];
+    }
+    
+    return self;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -71,60 +83,59 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0) {
+//    if (section == 0) {
         return 5;
-    } else {
-        return 1;
-    }
+//    } else {
+//        return 1;
+//    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0) {
+//    if (indexPath.section == 0) {
         return 44;
-    } else {
-        return 180;
-    }
+//    } else {
+//        return 180;
+//    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0) {
-        NSString *cellIdentifier=@"Cell";
-
-        NSDictionary *dict = @{@"title":@"sehr niedrig",@"subTitle":@"ausschließlich sitzende/liegende Tätigkeit", @"icon":@""};
-        UITableViewCell *cell = [PerformanceCell tableView:tableView performanceCellWithIdentifier:cellIdentifier];
-        [(PerformanceCell *)cell mapData:dict];
-        
-        return cell;
-    }
-    else if (indexPath.section == 1) {
-        NSString *pickerCellIdentifier=@"PickerCell";
-        UITableViewCell *pickerCell=[tableView dequeueReusableCellWithIdentifier:pickerCellIdentifier];
-        if (pickerCell==nil) {
-            pickerCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:pickerCellIdentifier];
-            
-//            UIPickerView *pickerView=[[UIPickerView alloc] initWithFrame:CGRectMake((320/2)-50, 0, 100, 100)];
-            
-            UIPickerView *pickerView; //=[[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, 320, 162)];
-            pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(10, 10, 320, 180)];
-            [pickerView setDelegate:self];
-//            pickerView.transform = CGAffineTransformMakeScale(.4, 0.7);
-//            pickerView.dataSource = self;
-//            pickerView.delegate = self;
-            [pickerCell addSubview:pickerView];
-            
-        }
-        
-        return pickerCell;
-    }
+    //    if (indexPath.section == 0) {
+    NSString *cellIdentifier=@"Cell";
     
-    return nil;
+    NSDictionary *dict = @{@"title":@"sehr niedrig",@"subTitle":@"ausschließlich sitzende/liegende Tätigkeit", @"icon":@""};
+    UITableViewCell *cell = [PerformanceCell tableView:tableView performanceCellWithIdentifier:cellIdentifier];
+    [(PerformanceCell *)cell mapData:dict];
+    
+    return cell;
+    //    }
+    //    else if (indexPath.section == 1) {
+    //        NSString *pickerCellIdentifier=@"PickerCell";
+    //        UITableViewCell *pickerCell=[tableView dequeueReusableCellWithIdentifier:pickerCellIdentifier];
+    //        if (pickerCell==nil) {
+    //            pickerCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:pickerCellIdentifier];
+    //
+    //            UIPickerView *pickerView=[[UIPickerView alloc] initWithFrame:CGRectMake((320/2)-50, 0, 100, 100)];
+    //
+    //            pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(10, 10, 320, 180)];
+    //            [pickerView setDelegate:self];
+    //            //            pickerView.transform = CGAffineTransformMakeScale(.4, 0.7);
+    //            //            pickerView.dataSource = self;
+    //            //            pickerView.delegate = self;
+    //            [pickerCell addSubview:pickerView];
+    //
+    //        }
+    //
+    //        return pickerCell;
+    //    }
+    
+    //    return nil;
 }
 
 #pragma mark - UIPickerView
@@ -143,29 +154,5 @@
 {
     return [NSString stringWithFormat:@"%d cm", row+40];
 }
-
-
-
-//#pragma mark - DropDown Delegate Method
-//-(void) itemSelectedWithText:(NSString*)text atIndex:(int)index{
-//    
-//    NSLog(@"%s %@",__PRETTY_FUNCTION__,text);
-//    
-//}
-//
-//- (void) itemUnitPressed:(UIButton*)sender{
-//    
-//    NSArray *arr = @[@"1 Tag", @"2 Tage", @"3 Tage", @"4 Tage", @"5 Tage", @"6 Tage", @"7 Tage", @"8 Tage", @"9 Tage"];
-//    
-//    if (dropDownPicker) {
-//        dropDownPicker = nil;
-//    }
-//    
-//    dropDownPicker = [DropDownController new];
-//    [dropDownPicker setDataArr:arr];
-//    [dropDownPicker setDelegate:self];
-//    [dropDownPicker presentDropDownInView:self.tableView];
-//    
-//}
 
 @end

@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DropDownController.h"
 
-@interface PerformanceNutrition : UIView <UIPickerViewDelegate, UIPickerViewDataSource, DropDownDelegate>
-{
-    DropDownController *dropDownPicker;
-}
+@interface PerformanceNutrition : UIView <UIPickerViewDelegate, UIPickerViewDataSource>
+
 
 @property (nonatomic,weak) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) UIPickerView *picker;
