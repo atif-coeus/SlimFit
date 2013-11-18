@@ -107,6 +107,7 @@
 		F85A2018182B730F001AB9A6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2017182B730F001AB9A6 /* MediaPlayer.framework */; };
 		F85A201A182B7363001AB9A6 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A2019182B7363001AB9A6 /* EventKit.framework */; };
 		F85A201C182B736A001AB9A6 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85A201B182B736A001AB9A6 /* EventKitUI.framework */; };
+		F88CFCF11839FB0600D78F33 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88CFCF01839FB0600D78F33 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +295,7 @@
 		F85A2017182B730F001AB9A6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F85A2019182B7363001AB9A6 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		F85A201B182B736A001AB9A6 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		F88CFCF01839FB0600D78F33 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88CFCF11839FB0600D78F33 /* MessageUI.framework in Frameworks */,
 				EA9ACA5318212E82003C9D12 /* UIKit.framework in Frameworks */,
 				F85A201C182B736A001AB9A6 /* EventKitUI.framework in Frameworks */,
 				F85A201A182B7363001AB9A6 /* EventKit.framework in Frameworks */,
@@ -351,6 +354,7 @@
 		EA9ACA4D18212E82003C9D12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F88CFCF01839FB0600D78F33 /* MessageUI.framework */,
 				F85A201B182B736A001AB9A6 /* EventKitUI.framework */,
 				F85A2019182B7363001AB9A6 /* EventKit.framework */,
 				F85A2017182B730F001AB9A6 /* MediaPlayer.framework */,

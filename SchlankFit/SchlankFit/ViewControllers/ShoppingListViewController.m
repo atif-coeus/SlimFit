@@ -50,6 +50,8 @@ const NSString *strikeThroughKey = @"strikethrough";
     return self;
 }
 
+
+#pragma mark - Alert
 -(void) removeAlert{
     NSLog(@"remove alert");
     ShoppingListNotifier *view = (ShoppingListNotifier*) [self.view viewWithTag:1000];
@@ -64,6 +66,37 @@ const NSString *strikeThroughKey = @"strikethrough";
     [self.view addSubview:notifierView];
     
     [self performSelector:@selector(removeAlert) withObject:nil afterDelay:5.0];
+}
+
+#pragma mark - Keyboard Toolbar
+-(void)resignKeyboard {
+    [self.addEntryTextFiled resignFirstResponder];
+}
+
+-(void) addEntry {
+    
+    NSDictionary *dict = @{itemAmoutKey:@"1", itemUnitKey:@"kg", itemNameKey:self.addEntryTextFiled.text, strikeThroughKey:[NSNumber numberWithBool:NO]};
+    
+    [data insertObject:dict atIndex:0];
+    
+    [self.tableView reloadData];
+    [self.addEntryTextFiled resignFirstResponder];
+}
+
+-(void) addKeyboardToolbar{
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    [toolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [toolbar sizeToFit];
+    
+    UIBarButtonItem *addButton =[[UIBarButtonItem alloc] initWithTitle:@"Hinzu" style:UIBarButtonItemStylePlain target:self action:@selector(addEntry)];
+    UIBarButtonItem *flexButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *doneButton =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(resignKeyboard)];
+    
+    NSArray *itemsArray = [NSArray arrayWithObjects:addButton, flexButton, doneButton, nil];
+    
+    [toolbar setItems:itemsArray];
+    
+    [self.addEntryTextFiled setInputAccessoryView:toolbar];
 }
 
 - (void)viewDidLoad
@@ -97,6 +130,9 @@ const NSString *strikeThroughKey = @"strikethrough";
     
     [self performSelector:@selector(showAlert) withObject:nil afterDelay:1.0];
     
+    self.addEntryTextFiled.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"add_entry.png"]];
+    
+    [self addKeyboardToolbar];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,22 +141,22 @@ const NSString *strikeThroughKey = @"strikethrough";
     // Dispose of any resources that can be recreated.
 }
 
-//-(void) addLine:(UIView*)view{
-//    
-//    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(10, view.frame.size.height/2, view.bounds.size.width, 5)];
-//    lineView.backgroundColor = [UIColor blackColor];
-//    [view addSubview:lineView];
-//
-//}
+-(void) addLine:(UIView*)view{
+    
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(20, view.frame.size.height/2, view.bounds.size.width - 30, 5)];
+    lineView.backgroundColor = [UIColor blackColor];
+    [view addSubview:lineView];
+
+}
 
 -(void)cellSwipe:(UISwipeGestureRecognizer *)gesture {
     
     UITableViewCell *view = (UITableViewCell *)gesture.view;
     int index = view.contentView.tag;
     NSMutableDictionary *dict = data[index];
-    
+
     [dict setObject:[NSNumber numberWithBool:YES] forKey:strikeThroughKey];
-    
+
     [self.tableView reloadData];
     [self performSelector:@selector(setDataIndexForObject:) withObject:dict afterDelay:0.5];
     
@@ -215,8 +251,9 @@ const NSString *strikeThroughKey = @"strikethrough";
     [mLabel setText:text];
     
     if ([dict[strikeThroughKey] boolValue]) {
-        [mLabel setShouldStrikeOut:YES];
-        [mLabel setNeedsDisplay];
+        [self addLine:cell.contentView];
+//        [mLabel setShouldStrikeOut:YES];
+//        [mLabel setNeedsDisplay];
     } else {
         [mLabel setShouldStrikeOut:NO];
         [mLabel setNeedsDisplay];
@@ -289,6 +326,55 @@ const NSString *strikeThroughKey = @"strikethrough";
     [title setHidden:YES];
     [cell.editView setHidden:NO];
     
+}
+
+- (IBAction)shareViaEmail:(id)sender {
+    // Email Subject
+    NSString *emailTitle = @"Test Email";
+    // Email Content
+    NSString *messageBody = @"";
+    for(NSDictionary *obj in data){
+        if(obj){
+            NSString *body = [NSString stringWithFormat:@"%@ %@ %@ \n",obj[itemAmoutKey],obj[itemUnitKey],obj[itemNameKey]];
+            messageBody = [messageBody stringByAppendingString:body];
+            
+        }
+    }
+    // To address
+    // NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:NO];
+//    [mc setToRecipients:toRecipents];
+    
+    // Present mail view controller on screen
+    [self presentViewController:mc animated:YES completion:NULL];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
